@@ -11,8 +11,15 @@ h1 {
 		text-transform: uppercase;
 		border-bottom: 5px solid #af0000;
 		margin-top: 40px;
+	color: #ffff00;
 	}
 h2 {
-		color: #5f0000;
+		color: #afff00;
 		font-size: 1em;
 	}
+h6 {
+	color: #afff00;
+}
+p {
+	color: #00ffff;
+}
