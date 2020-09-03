@@ -17,7 +17,7 @@
 <p> La real academia espaniola;<br>
 A mekalela;<br> y a dontololo </p>
 <br>
-<img src="bortoslovo1.jpg" alt=""><img src="borto3.gif" alt="">
+<img src="bortoslovo-1.jpg" alt=""><img src="borto3.gif" alt="">
 <h6>Powered by Mikaela</h6>
 </body>
 
