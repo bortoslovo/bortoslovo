@@ -1,6 +1,5 @@
 <html>
 <head>
-<meta charset="utf-8">
   <title>Borto Slovo</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -18,7 +17,7 @@
 A mekalela;<br> y a dontololo </p>
 <br>
 <img src="bortoslovo-1.jpg" alt="logo"><img src="borto3.gif" alt="logo">
-<h6>Powered by Mikaela</h6>
+<h6>Art design powered by Mikaela</h6>
 </body>
 
 
