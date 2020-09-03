@@ -2,6 +2,7 @@
 <head>
 <meta charset="utf-8">
   <title>Borto Slovo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
