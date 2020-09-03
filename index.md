@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>Borto Slovo</title>
+ 
   <link rel="stylesheet" href="style.css">
 </head>
 
