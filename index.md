@@ -1,7 +1,7 @@
-<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
+  <title>Borto Slovo</title>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
 <p> La real academia espaniola;<br>
 A mekalela;<br> y a dontololo </p>
 <br>
-<img src="bortoslovo-1.jpg" alt=""><img src="borto3.gif" alt="">
+<img src="bortoslovo-1.jpg" alt="logo"><img src="borto3.gif" alt="logo">
 <h6>Powered by Mikaela</h6>
 </body>
 
