@@ -14,51 +14,57 @@
 	<nav>
 		<a href="index.html">Back to main the main page</a>
 	</nav>
-<h1>Type Design</h1>
+<h1>h1 // Type Design</h1>
 <hr>
-<h2>Serif Typefaces</h2>
+<h2>h2 // Serif Typefaces</h2>
 <p>Serif typefaces have small slabs at the ends of letter strokes.
 In general, serif fonts can make large amounts of text easier to
 read.</p>
-<h3>Baskerville</h3>
-<h4>Description</h4>
+<h3>h3 // Baskerville</h3>
+<h4>h4 // Description</h4>
 <p>Description of the Baskerville typeface.</p>
-<h4>History</h4>
+<h4>h4 // History</h4>
 <p>The history of the Baskerville typeface.</p>
-<h3>Georgia</h3>
+<h3>h3 // Georgia</h3>
 <p>Description and history of the Georgia typeface.</p>
-<h2>Sans-serif Typefaces</h2>
+<h2>h2 // Sans-serif Typefaces</h2>
 <p>Sans-serif typefaces do not have slabs at the ends of strokes.</p>
+
+<hr>
 
 <h1>Ordered and unordered lists</h1>
 <ol start="17">
-<li>Serif</li>
-<li>Sans-serif</li>
+<li>ol li // Serif</li>
+<li>li // Sans-serif</li>
 <li>Script</li>
 <li>Display</li>
 <li>Dingbats</li>
 </ol>
 
+<hr>
+
 <h1>Description lists</h1>
 <dl>
-<dt>Linotype</dt>
-<dd>Line-casting allowed type to be selected, used, then recirculated
+<dt>dt // Linotype</dt>
+<dd>dd // Line-casting allowed type to be selected, used, then recirculated
 into the machine automatically. This advance increased the speed of
 typesetting and printing dramatically.</dd>
-<dt>Photocomposition</dt>
-<dd>Typefaces are stored on film then projected onto photo-sensitive
+<dt>dt // Photocomposition</dt>
+<dd>dd // Typefaces are stored on film then projected onto photo-sensitive
 paper. Lenses adjust the size of the type.</dd>
-<dt>Digital type</dt>
-<dd><p>Digital typefaces store the outline of the font shape in a
+<dt>dt // Digital type</dt>
+<dd><p>dd p // Digital typefaces store the outline of the font shape in a
 format such as Postscript. The outline may be scaled to any size for
 output.</p>
-<p>Postscript emerged as a standard due to its support of
+<p>dd p // Postscript emerged as a standard due to its support of
 graphics and its early support on the Macintosh computer and Apple
 laser printer.</p>
 </dd>
 </dl>
 
-<h1>nesting unordered lists</h1>
+<hr>
+
+<h1>nesting unordered lists ul </h1>
 <ul>
 <li>outside</li>
 <li>outside 2
@@ -70,48 +76,59 @@ laser printer.</p>
 </li>
 </ul>
 
+<hr>
+
 <h1>More description lists</h1>
 <dl>
-<dt>Serif examples</dt>
-<dd>Baskerville</dd>
-<dd>Goudy</dd>
-<dt>Sans-serif examples</dt>
-<dd>Helvetica</dd>
-<dd>Futura</dd>
-<dd>Avenir</dd>
+<dt>dt, dl above</dt>
+<dd>dd1</dd>
+<dd>dd2</dd>
+<dt>dt2</dt>
+<dd>dd3</dd>
+<dd>dd4</dd>
+<dd>dd5</dd>
 </dl>
 
+<hr>
+
 <h1>Blockquote</h1>
-<p>Renowned type designer, Matthew Carter, has this to say about his
+<p>paragraph // Renowned type designer, Matthew Carter, has this to say about his
 profession:</p>
 <blockquote>
-<p>Our alphabet hasn't changed in eons; there isn't much latitude in
+<p>blockquote paragraph 1 // Our alphabet hasn't changed in eons; there isn't much latitude in
 what a designer can do with the individual letters.</p>
-<p>Much like a piece of classical music, the score is written
+<p>blockquote paragraph 2 // Much like a piece of classical music, the score is written
 down. It's not something that is tampered with, and yet, each
 conductor interprets that score differently. There is tension in
 the interpretation.</p>
 </blockquote>
 
+<hr>
+
 <h1>Preformatted text</h1>
-<pre>
+<pre>pre starts here
 This is			an			example of
 		text with a		lot of
 							curious
 							whitespace.
+pre ends here
 </pre>
-<p>
+<p> paragraph
 This is			an			example of
 		text with a		lot of
 							curious
 							whitespace.
 </p>
 
+<hr>
+
 <h1>Figures &lt;figure&gt;</h1>
 <figure>
 	<img src="bortoslovo-1.jpg" alt="borto1">
 </figure>
-<figcaption>Sample CSS rule.</figcaption>
+<figcaption>figcaption here</figcaption>
+
+<hr>
 
 <h1>Figure 2 &lt;figure&gt;</h1>
 
@@ -122,11 +139,13 @@ body {
 background-color: #000;
 color: red;
 }
+this is code element
 </code>
 </pre>
-<figcaption>Sample CSS rule.</figcaption>
+<figcaption>figcaption</figcaption>
 </figure>
 
+<hr>
 
 <h1>Tapenade (Olive Spread)</h1>
 
@@ -172,6 +191,8 @@ basil garnish (optional).</li>
 </header>
 <!--page content-->
 
+<hr>
+
 <article>
 	<header>
 		<h1>Empieza article, header,h1</h1>
@@ -182,9 +203,478 @@ basil garnish (optional).</li>
 <p>Ah ... un articulo sin acentos &gt;&lt;</p>
 </article>
 
+<hr>
+
 	<nav>
 		<a href="index.html">Back to main the main page</a>
 	</nav>
+
+<hr>
+
+<main>
+	<h1>Here is the &lt;main&gt; element</h1>
+</main>
+
+<hr>
+
+<article>
+<header>
+<h1>Here an article then header then h1</h1>
+<p>paragraph, <time datetime="2017-11-11">November 11,
+2017</time></p>
+</header>
+<!-- article content here -->
+<footer>
+<p><small>Here starts footer with small. copyright symbol after this &copy;
+2017 Jennifer Robbins.</small></p>
+<nav>
+<ul>
+<li><a href="/">Previous</a></li>
+<li><a href="/">Next</a></li>
+</ul>
+</nav>
+</footer>
+</article>
+<p>above this ended article, footer, nav</p>
+
+<hr>
+
+<section>
+<h2>Section I</h2>
+<ul>
+<li>ul 1</li>
+</ul>
+</section>
+
+<hr>
+
+<section>
+<h2>Section II</h2>
+<p>paragraph</p>
+<ul>
+<li>another ul xd</li>
+</ul>
+</section>
+
+<hr>
+
+<article>
+<h1>article h1</h1>
+<section>
+<h2>section h2</h2>
+<p>paragraph</p>
+</section>
+<section>
+<h2>section h2</h2>
+<p>paragraph</p>
+</section>
+</article>
+
+<hr>
+
+<section id="essays">
+<article>
+<h1>secton article h1 // A Fresh Look at Futura</h1>
+<p>paragraph // ...</p>
+</article>
+<article>
+<h1>article h1 // Getting Personal with Humanist</h1>
+<p>paragraph // rep // section</p>
+</article>
+</section>
+
+<hr>
+
+<h1>h1 // Web Typography</h1>
+<p>Back in 1997, there were competing font formats and tools for
+making them...</p>
+<p>We now have a number of methods for using beautiful fonts on web
+pages...</p>
+<aside>
+<h2>aside h2 // Web Font Resources</h2>
+<ul>
+<li><a href="http://typekit.com/">ul li // Typekit</a></li>
+<li><a href="http://fonts.google.com">Google Fonts // aside</a></li>
+</ul>
+</aside>
+
+<hr>
+
+<nav>
+	<ul>
+		<li><a href="/">nav ul li // nav </a></li>
+	</ul>
+</nav>
+
+<hr>
+
+<address>
+address // Contributed by <a href="../authors/robbins/">Jennifer Robbins</a>,
+<a href="http://www.oreilly.com/">O'Reilly Media</a>
+</address>
+
+<hr>
+
+<h1> Inline elements </h1>
+
+<h2> Emphasized text &lt;em&gt;</h2>
+<p><em>Arlo</em> is very smart.</p>
+<p>Arlo is <em>very</em> smart.</p>
+
+<br>
+
+<h2> Important text &lt;strong&gt;</h2>
+<p>When returning the car, <strong>drop the keys in the red box by the
+front desk</strong>.</p>
+
+<br>
+
+<h2> &lt;b&gt; </h2>
+<p>The slabs at the ends of letter strokes are called
+<b>serifs</b>.</p>
+
+<br>
+
+<h2>&lt;i&gt;</h2>
+<p>Simply change the font and <i>Voila!</i>, a new
+personality!</p>
+
+<br>
+
+<h2>&lt;s&gt;</h2>
+<p>Scala Sans was designed by <s>Eric Gill</s> Martin
+Majoor.</p>
+
+<br>
+
+<h2>&lt;u&gt;</h2>
+<p>New York subway signage is set in <u>Helviteca</u>.</p>
+
+<br>
+
+<h2>&lt;small&gt;</h2>
+<p><small>(This font is free for personal and commercial
+use.)</small></p>
+
+<br>
+
+<h2>Short quotations</h2>
+Matthew Carter says, <q>Our alphabet hasn't changed in eons.</q>
+
+<br>
+
+<h2>Abbreviations and acronyms &lt;abbr&gt;</h2>
+<abbr title="Points">pts.</abbr>
+<abbr title="American Type Founders">ATF</abbr>
+
+<br>
+
+<h2>Citations &lt;cite&gt;</h2>
+<p>Passages of this article were inspired by <cite>The Complete Manual
+of Typography</cite> by James Felici.</p>
+
+<br>
+
+<h2>Defining terms &lt;dfn&gt;</h2>
+<p><dfn>Script typefaces</dfn> are based on handwriting.</p>
+
+<br>
+
+<h2>Program code elements 
+&lt;code&gt; &lt;var&gt; &lt;samp&gt; &lt;kbd&gt;</h2>
+
+<br>
+
+<h2>Subscript and superscript
+&lt;sub&gt; &lt;sup&gt;</h2>
+<p>H<sub>2</sub>0</p>
+<p>E=MC<sup>2</sup></p>
+
+<br>
+
+<h2>Higlighted text &lt;mark&gt;</h2>
+<p> ... PART I. ADMINISTRATION OF THE GOVERNMENT. TITLE IX.
+TAXATION. CHAPTER 65C. MASS. <mark>ESTATE TAX</mark>. Chapter 65C:
+Sect. 2. Computation of <mark>estate tax</mark>.</p>
+
+<br>
+
+<h2>Dates and times &lt;time&gt;</h2>
+<dl>
+	<ul>
+		<li>
+			<dt>Time only: 9:30 p.m.</dt>
+			<dd>&lt;time datetime="21:30"&gt;9:30p.m.&lt;/time&gt;</dd>
+			<dd><time datetime="21:30">9:30p.m.</time></dd>
+		</li>
+		<li>
+			<dt>Date only: June 19, 2016</dt>
+			<dd><time datetime="2016-06-19">June 19, 2016</time></dd>
+		</li>
+	</ul>
+</dl>
+
+<br>
+
+<h2> Dates and times. Round 2 xD View the page source :)</h2>
+<p>Time only: 9:30 p.m.</p>
+<time datetime="21:30">9:30p.m.</time>
+<br>
+<br>
+<p>Date only: June 19, 2016</p>
+<time datetime="2016-06-19">June 19, 2016</time>
+<br>
+<br>
+<p>Date and time: Sept. 5, 1970, 1:11a.m.</p>
+<time datetime="1970-09-05T01:11:00">Sept. 5, 1970, 1:11a.m.</time>
+<br>
+<br>
+<p>Date and time, with time zone information: 8:00am on July 19, 2015, in
+Providence, RI</p>
+<time datetime="2015-07-19T08:00:00-05:00">July 19, 2015, 8am,
+Providence RI</time>
+
+<br>
+
+<h2>Machine-readable information &lt;data&gt;</h2>
+<data value="12">Twelve</data>
+<data value="978-1-449-39319-9">CSS: The Definitive Guide</data>
+
+<br>
+
+<h2>Inserted and deleted text
+&lt;ins&gt; &lt;del&gt;</h2>
+
+<p>Chief Executive Officer: <del title="retired">Peter Pan</del><ins>Pippi
+Longstocking</ins></p>
+
+<hr>
+
+<h1>Breaks</h1>
+
+<h2>Line breaks &lt;br&gt;</h2>
+<p>So much depends <br>upon <br><br>a red wheel <br>barrow</p>
+<br>
+<p>But don't do:</p>
+<p>Times<br>
+Georgia<br>
+Garamond
+</p>
+<br>
+<p>Do this instead:</p>
+<ul>
+<li>Times</li>
+<li>Georgia</li>
+<li>Garamond</li>
+</ul>
+
+<br>
+
+<h2>Word breaks &lt;wbr&gt;</h2>
+<p>The biggest word you've ever heard and this is how it goes:
+<em>supercali<wbr>fragilistic<wbr>expialidocious</em>!</p>
+
+<br>
+
+<h2>&lt;dir&gt; example</h2>
+<p>This is how you write Shalom:
+<span dir="rtl">םולש</span></p>
+
+<hr>
+
+<h2>Exercise</h2>
+
+<article>
+<header>
+<p>posted by BGB, <time datetime="2016-11-15">November 15, 2016</time></p>
+</header>
+
+<h2>Low and Slow</h2>
+<p>This week I am <em>extremely</em> excited a bout a new cooking 
+technique called <dfn><i>sous vide</i></dfn>. In <i>sous vide</i> 
+cooking, you submerge the food (usually vacuum-sealed in plastic)
+into a water bath that is precisely set to the target temperature
+you want the food to be cooked to. In his book, <cite>Cooking for
+Greeks</cite>, Jeff Potter describes it as <q>ultra-low-temperature
+poaching.</q></p>
+<p>Next month, we will be serving <b><i>Sous Vide</i> Salmon with
+Dill Hollandaise</b>. To reserve a seat at the chef table, contact
+us before <time datetime="2016-11-30">November 30</time>.</p>
+
+<address>
+blackgoose@example.com<br>
+555-336-1800
+</address>
+
+<p><small>Warning: <i>Sous vide</i> coooked salmon is not pasteurized.
+Avoid it if you are pregnant or have immunity issues. </small></p>
+</article>
+
+<hr>
+
+<h1>Generic elements div span</h1>
+<div class="listing">
+<img src="borto3.gif" alt="">
+<p><cite>The Complete Manual of Typography</cite>, James Felici</p>
+<p>A combination of type history and examples of good and bad type
+design.</p>
+</div>
+
+<br>
+
+<div id="news">
+<h1>New This Week</h1>
+<p>We've been working on...</p>
+<p>And last but not least,... </p>
+</div>
+
+<br>
+
+<ul>
+<li>John: <span class="tel">999.8282</span></li>
+<li>Paul: <span class="tel">888.4889</span></li>
+<li>George: <span class="tel">888.1628</span></li>
+<li>Ringo: <span class="tel">999.3220</span></li>
+</ul>
+
+<br>
+
+<h2>id and class attributes</h2>
+
+<h3>identification with id</h3>
+
+<div id="ISBN0321127307">
+<img src="placeholder1.png" alt="">
+<p><cite>The Complete Manual of Typography</cite>, James Felici</p>
+<p>A combination of type history and examples of good and bad type.
+</p>
+</div>
+<div id="ISBN0881792063">
+<img src="placeholder2.png" alt="">
+<p><cite>The Elements of Typographic Style</cite>, Robert Bringhurst
+</p>
+<p>This lovely, well-written book is concerned foremost with creating
+beautiful typography.</p>
+</div>
+
+<br>
+
+<section id="news">
+<p>section with id</p> 
+</section>
+<aside id="links">
+<p>aside with id</p>
+</aside>
+
+<br>
+
+<h3>classification with class</h3>
+
+<div id="ISBN0321127307" class="listing">
+<header>
+<img src="placeholder1.png" alt="">
+<p><cite>The Complete Manual of Typography</cite>, James Felici</p>
+</header>
+<p class="description">A combination of type history and examples of
+good and bad type.</p>
+</div>
+<div id="ISBN0881792063" class="listing">
+<header>
+<img src="placeholder2.png" alt="">
+<p><cite>The Elements of Typographic Style</cite>, Robert Bringhurst
+</p>
+</header>
+<p class="description">This lovely, well-written book is concerned
+foremost with creating beautiful typography.</p>
+</div>
+
+<br>
+
+<div id="ISBN0321127307" class="listing book">
+<img src="placeholder1.png" alt="CMT cover">
+<p><cite>The Complete Manual of Typography</cite>, James Felici</p>
+<p class="description">A combination of type history and examples of
+good and bad type.</p>
+</div>
+<div id="ISBN0881792063" class="listing book">
+<img src="placeholder2.png" alt="ETS cover">
+<p><cite>The Elements of Typographic Style</cite>, Robert Bringhurst
+</p>
+<p class="description">This lovely, well-written book is concerned
+foremost with creating beautiful typography.</p>
+</div>
+
+<br>
+
+<h3>global attributes</h3>
+<ol id="directions">
+<li>...</li>
+<li>...</li>
+<li>...</li>
+</ol>
+
+<hr>
+
+<h2>structured data</h2>
+
+<h3>microformats</h3
+<div class="h-card">
+<p class="p-name">Cindy Sherman</p>
+<p class="p-tel">555.999-2456</p>
+</div>
+
+<h3>microdata</h3>
+<div itemscope itemtype="http://schema.org/Person">
+<p itemprop="name">Cindy Sherman</p>
+<p itemprop="telephone">555.999-2456</p>
+</div>
+
+<h3>RDFa and RDFa Lite</h3>
+<div vocab="http://schema.org" typeof="Person">
+<p property="name">Cindy Sherman</p>
+<p property="telephone">555.999-2456</p>
+</div>
+
+<h3>JSON-LD</h3>
+<script type="application/ld+json">
+{
+"@context": "http://schema.org/",
+"@type": "Person",
+"name": "Cindy Sherman"
+"telephone": "555.999-2456"
+}
+</script>
+
+<hr>
+
+<h2>ARIA</h2>
+<h3>Roles</h3>
+<ul id="tabs" role="toolbar">
+<li>A-G</li>
+<li>H-O</li>
+<li>P-T</li>
+<li>U-Z</li>
+</ul>
+
+<br>
+
+<h2>escaping characters</h2>
+<pre style="font-size: 150%;">
+&lt;	&amp;lt;
+&gt;	&amp;gt;
+&quot;	&amp;quot;
+&apos;	&amp;apos;
+&amp;		&amp;amp;
+</pre>
+<br>
+<pre>
+random stuff
+</pre>
+
+<br>
+
+<h2>non-breaking space &amp;nbsp;</h2>
+<p>Random stuf and silly text to fill the line so one can see the property of this "thing" Jennifer&nbsp;Robbins</p>
 
 	</body>
 </html>

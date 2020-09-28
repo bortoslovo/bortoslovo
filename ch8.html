@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Chapter acht</title>
+	<style>
+		body {
+			background-color: #faf2e4;
+  			margin: 0 10%;
+		}
+		td, th {
+			border: 1px solid blue;
+		}	
+		table {
+			caption-side: bottom;
+			border: 1px solid green;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Tables</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Main page</a></li>
+				</ul>
+			</nav>
+	</header>
+
+<article>
+	<section>
+		<h2>Beispiel eins</h2>
+			<table>
+				<tr>
+					<th>Menu item</th>
+					<th>Calories</th>
+					<th>Fat (g)</th>
+				</tr>
+				<tr>
+					<td>Chicken noodle soup</td>
+					<td>120</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>Caesar salad</td>
+					<td>400</td>
+					<td>26</td>
+				</tr>
+			</table>
+	</section>
+</article>
+
+<article>
+	<section>
+		<h2>Beispiel zwei</h2>
+			<table>
+				<tr>
+					<th>Burgers</th>
+					<td>Organic Grass-fed Beef</td>
+					<td>Black Bean Veggie</td>
+				</tr>
+				<tr>
+					<th>Fries</th>
+					<td>Hand-cut Idaho potato</td>
+					<td>Seasoned sweet potato</td>
+				</tr>
+			</table>
+	</section>
+</article>
+
+<article>
+	<section>
+		<h2>Exercise 8-1</h2>
+			<table>
+				<tr>
+					<th>Album</th>
+					<th>Year</th>
+				</tr>
+				<tr>
+					<td>Rubber Soul</td>
+					<td>1965</td>
+				</tr>
+				<tr>
+					<td>Revolver</td>
+					<td>1966</td>
+				</tr>
+			</table>
+	</section>
+</article>
+
+<article>
+	<section>
+	<h2>Spanning cells</h2>
+		<h3>Column spans</h3>
+		<table>
+			<tr>
+				<th colspan="2">Fat</th>
+			</tr>
+			<tr>
+				<td>Saturated Fat (g)</td>
+				<td>Unsaturated Fat (g)</td>
+			</tr>
+		</table>
+	</section>
+
+	<section>
+	<h3>Excercise 8-1</h3>
+		<table>
+			<tr>
+				<th>7:00pm</th>
+				<th>7:30pm</th>
+				<th>8:00pn</th>
+			</tr>
+			<tr>
+				<td colspan="3">The Sunday Night Movie</td>
+			</tr>
+			<tr>
+				<td>Perry Mason</td>
+				<td>Candid Camera</td>
+				<td>What's My Line?</td>
+			</tr>
+			<tr>
+				<td>Bonanza</td>
+				<td colspan="2">The Wackiest Ship in the Army</td>
+			</tr>
+		</table>
+	</section>
+
+	<section>
+	<h3>Row spans</h3>
+		<table>
+			<tr>
+				<th rowspan="3">Serving Size</th>
+				<td>Small (8oz.)</td>
+			</tr>
+			<tr>
+				<td>Medium (16oz.)</td>
+			</tr>
+			<tr>
+				<td>Large (24oz.)</td>
+			</tr>
+		</table>	
+	</section>
+	
+	<section>
+	<h3>Exercise 8-3</h3>
+		<table>
+			<tr>
+				<td>apples</td>
+				<td rowspan="3">oranges</td>
+				<td>pears</td>
+			</tr>
+			<tr>
+				<td>bananas</td>
+				<td rowspan="2">pineapple</td>
+			</tr>
+			<tr>
+				<td>lychees</td>
+			</tr>
+		</table>
+	</section>
+
+	<section>
+	<h3>Captions in tables</h3>
+		<table>
+			<caption>Nutritional Information</caption>
+			<tr>
+			<th>Menu item</th>
+			<th>Calories</th>
+			<th>Fat (g)</th>
+			</tr>
+			<!-- table continues -->
+		</table>
+
+	<section>	
+	<h3>Table inside figure</h3>	
+		<figure>
+			<table>
+				<tr>
+				<th>Menu item</th>
+				<th>Calories</th>
+				<th>Fat (g)</th>
+				</tr>
+				<!-- table continues -->
+			</table>
+			<figcaption>Nutritional Information</figcaption>
+		</figure>
+	</section>
+</article>
+
+<article>
+	<h3>scope</h3>
+	<table>
+		<tr>
+			<th scope="row">Mars</th>
+			<td>.95</td>
+			<td>.62</td>
+			<td>0</td>
+		</tr>	
+	</table>
+</article>
+
+<article>
+	<h3>headers</h3>
+	<table>
+		<tr>
+			<th id="diameter">Diameter measured in earths</th>
+			<!-- many other cells -->
+			<td headers="diameter">.38</td>
+			<!-- many other cells -->
+		</tr>
+	</table>
+</article>
+
+<article>
+	<h3>Row group elements</h3>
+	<table>
+		<thead>
+			<!-- headers in these rows-->
+			<tr>
+				<td>thead tr td</td>
+				<td>thead tr td</td>
+			</tr>
+			<tr><td>thead tr</td></tr>
+			<tr><td>thead tr</td></tr>
+		</thead>
+		<tbody>
+			<!-- data -->
+			<tr>
+				<td>tbody tr td</td>
+				<td>tbody tr td</td>
+			</tr>
+			<tr><td>tbody tr</td></tr>
+			<tr><td>tbody tr</td></tr>
+			<tr><td>tbody tr</td></tr>
+			<tr><td>tbody tr</td></tr>
+		</tbody>
+		<tfoot>
+			<!-- footnote -->
+			<tr><td>tfoot tr</td></tr>
+		</tfoot>
+	</table>
+</article>
+
+<article>
+	<section>
+		<h3>Exercise 8-4</h3>
+		<table>
+			<caption>Caption</caption>
+			<tr>
+				<th rowspan="2"></th>		
+				<th colspan="2">A common header for two subheads</th>
+				<th rowspan="2">Header 3</th>
+			</tr>
+			<tr>
+				<th>Header 1</th>
+				<th>Header 2</th>
+			</tr>
+			<tr>
+				<th>Thing A</th>
+				<td>data A1</td>
+				<td>data A2</td>
+				<td>data A3</td>
+			</tr>
+			<tr>
+				<th>Thing B</th>
+				<td>data B1</td>
+				<td>data B2</td>
+				<td>data B3</td>
+			</tr>
+			<tr>
+				<th>Thing C</th>
+				<td>data C1</td>
+				<td>data C2</td>
+				<td>data C3</td>
+			</tr>
+		</table>
+	</section>
+	
+	<section>
+		<h3>Exercise 8-4 complete</h3>
+		<table>
+			<caption>Your content here</caption>
+			<colgroup></colgroup>
+			<colgroup span="3"></colgroup>
+			<thead>
+				<tr>
+					<th rowspan="2">&nbsp;</th>
+					<th colspan="2">A common header for two subheads</th>
+					<th rowspan="2">Header 3</th>
+				</tr>
+				<tr>
+					<th>Header 1</th>
+					<th>Header 2</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">Thing A</th>
+					<td>data A1</td>
+					<td>data A2</td>
+					<td>data A3</td>
+				</tr>
+				<tr>
+					<th scope="row">Thing B</th>
+					<td>data B1</td>
+					<td>data B2</td>
+					<td>data B3</td>				
+				</tr>
+				<tr>
+					<th scope="row">Thing C</th>
+					<td>data C1</td>
+					<td>data C2</td>
+					<td>data C3</td>				
+				</tr>
+			</tbody>
+		</table>
+	</section>
+</article>
+
+</body>
+</html>
