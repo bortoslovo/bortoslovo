@@ -21,12 +21,19 @@
 				color: darkgreen;
 				font-size: 1.5em;
 			}
+			h3 {
+				color: darkred;
+			}
+			h4 {
+				color: navy;
+			}
 			pre {
 				font-size: 15px;
 				-moz-tab-size: 3;
 				tab-size: 3;
 			}
 		</style>
+				<!-- margin-top: 20px; -->
 	</head>
 <body>
 
@@ -84,9 +91,6 @@ Here it is the third line.</p>
 <h5>h5 heading</h5>
 <p>Another paragraph p.</p>
 <h6>h6 heading</h6>
-<p>hr after this line.</p>
-
-<hr>
 
 <h2>Empty elements</h2>
 <p>&lt;elementname&gt;</p>
@@ -110,6 +114,7 @@ Here it is the third line.</p>
 <img src="../bortoslovo-1.jpg" alt="bortoslovo" height="100px" width="50px">
 
 <h2>Syle sheet</h2>
+<p>Syntax:</p>
 <pre>
 	&lt;head&gt;
 		&lt;meta charset="utf-8"&gt;
@@ -125,7 +130,7 @@ Here it is the third line.</p>
 			font-family: serif;
 			font-weight: normal;
 			text-transform: uppercase;
-			border-bottom: 1px solid #57b1dc;
+			border-bottom: 1px solid steelblue;
 			margin-top: 30px;
 		}
 		h2 {
@@ -136,9 +141,70 @@ Here it is the third line.</p>
 	&lt;/head&gt;
 </pre>
 
-<hr>
+<h2>Validate your html</h2>
+<p>html5.validator.nu</p>
 
-<h1>Ordered and unordered lists</h1>
+<h1>Chapter 5</h1>
+
+<h2>Marking up text</h2>
+
+<h3>Paragraphs</h3>
+<p>&lt;p&gt;content&lt;/p&gt;</p>
+
+<h3>Headings</h3>
+<p>Syntax</p>
+<p>
+&lt;h1&gt;content&lt;/h1&gt;<br>
+&lt;h2&gt;content&lt;/h2&gt;<br>
+&lt;h3&gt;content&lt;/h3&gt;<br>
+&lt;h4&gt;content&lt;/h4&gt;<br>
+&lt;h5&gt;content&lt;/h5&gt;<br>
+&lt;h6&gt;content&lt;/h6&gt;<br>
+</p>
+
+<h3>Horizontal rule - Thematic break</h3>
+<p>&lt;hr&gt;</p>
+
+<h3>Lists</h3>
+
+<h4>Unordered list &lt;ul&gt;</h4>
+<p>Sytax:</p>
+<pre>
+	&lt;ul&gt;
+		&lt;li&gt;content 1&lt;/li&gt;
+		&lt;li&gt;content 2&lt;/li&gt;
+		&lt;li&gt;content 3&lt;/li&gt;
+		&lt;li&gt;content 4&lt;/li&gt;
+	&lt;ul&gt;
+</pre>
+<p>Example:</p>
+<ul>
+	<li>content 1</li>
+	<li>content 2</li>
+	<li>content 3</li>
+	<li>content 4</li>
+</ul>
+
+<h4>Ordered list &lt;ol&gt;</h4>
+<p>Syntax:</p>
+<pre>
+	&lt;ol&gt;
+		&lt;li&gt;content 1&lt;/li&gt;
+		&lt;li&gt;content 2&lt;/li&gt;
+		&lt;li&gt;content 3&lt;/li&gt;
+		&lt;li&gt;content 4&lt;/li&gt;
+	&lt;ol&gt;
+</pre>
+<p>Starting with a different order</p>
+<pre>
+	&lt;ol start="17"&gt;
+		&lt;li&gt;content 1&lt;/li&gt;
+		&lt;li&gt;content 2&lt;/li&gt;
+		&lt;li&gt;content 3&lt;/li&gt;
+		&lt;li&gt;content 4&lt;/li&gt;
+	&lt;ol&gt;
+</pre>
+<p>Example:</p>
 <ol start="17">
 <li>ol li // Serif</li>
 <li>li // Sans-serif</li>
@@ -147,9 +213,28 @@ Here it is the third line.</p>
 <li>In the internet</li>
 </ol>
 
-<hr>
+<h4>Description list &lt;dl&gt;</h4>
+<pre>
+&lt;dl&gt;: description list
+&lt;dt&gt;: description term 
+&lt;dd&gt;: description definition 
+</pre>
 
-<h1>Description lists</h1>
+<p>Syntax:</p>
+<pre>
+&lt;dl&gt;
+	&lt;dt&gt;description term&lt;/dt&gt;
+		&lt;dd&gt;description definition&lt;/dd&gt;
+	&lt;dt&gt;another description term&lt;/dt&gt;
+		&lt;dd&gt;another description definition&lt;/dd&gt;
+	&lt;dt&gt;and another description term&lt;/dt&gt;
+		&lt;dd&gt;&lt;p&gt;description definition inside parahraph p&lt;/p&gt;
+				&lt;p&gt;another paragraph p inside the same dd&lt;/p&gt;
+		&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+
+<p>Example:</p>
 <dl>
 <dt>dt // description term</dt>
 <dd>dd // description definition</dd>
@@ -157,13 +242,26 @@ Here it is the third line.</p>
 <dd>dd // another description definition</dd>
 <dt>dt // and another description term</dt>
 <dd><p>dd p // description definition inside parahraph p.</p>
-<p>dd p // another paragraph p inside the same description definition.</p>
+<p>dd p // another paragraph p inside the same dd.</p>
 </dd>
 </dl>
 
-<hr>
+<h4>Nesting unordered lists &lt;ul&gt;</h4>
+<p>Syntax:</p>
+<pre>
+&lt;ul&gt;
+	&lt;li&gt;content&lt;/li&gt;
+	&lt;li&gt;content&lt;/li&gt;
+	&lt;ul&gt;
+		&lt;li&gt;content&lt;/li&gt;
+		&lt;li&gt;content&lt;/li&gt;
+		&lt;li&gt;content&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
 
-<h1>Nesting unordered lists ul </h1>
+<p>Example:</p>
 <ul>
 <li>first level ul</li>
 <li>first level ul 2</li>
@@ -175,9 +273,21 @@ Here it is the third line.</p>
 </li>
 </ul>
 
-<hr>
+<h4>Nesting description lists</h4>
+<p>Syntax:</p>
+<pre>
+&lt;dl&gt;
+	&lt;dt&gt;term 1&lt;/dt&gt;
+		&lt;dd&gt;definition 1&lt;/dd&gt;
+		&lt;dd&gt;definition 2&lt;/dd&gt;
+	&lt;dt&gt;term 2&lt;/dt&gt;
+		&lt;dd&gt;definition 3&lt;/dd&gt;
+		&lt;dd&gt;definition 4&lt;/dd&gt;
+		&lt;dd&gt;definition 5&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
 
-<h1>More description lists</h1>
+<p>Example:</p>
 <dl>
 <dt>dt, dl above this</dt>
 <dd>dd1</dd>
@@ -188,9 +298,12 @@ Here it is the third line.</p>
 <dd>dd5</dd>
 </dl>
 
-<hr>
+<h3>Additional content elements</h3>
 
-<h1>Blockquote</h1>
+<h4>Blockquote &lt;blockquote&gt;</h4>
+<p>Syntax:</p>
+<p>&lt;blockquote&gt;content&lt;/blockquote&gt;
+<p>Example:</p>
 <p>paragraph // Blockquote incoming:</p>
 <blockquote>
 <p>blockquote paragraph 1 // First line inside paragraph p inside blockquote.
@@ -201,9 +314,18 @@ Third line inside second paragraph p inside same blockquote.
 Fourth line inside second paragrap p inside same blockquote.</p>
 </blockquote>
 
-<hr>
-
-<h1>Preformatted text</h1>
+<h4>Preformatted text &lt;pre&gt;</h4>
+<p>Syntax:</p>
+<pre>
+&lt;pre&gt;pre starts here
+This is			an			example of
+		text with a		many
+							rare
+							spacing.
+pre ends here
+&lt;/pre&gt;
+<br>
+<p>Example:</p>
 <pre>pre starts here
 This is			an			example of
 		text with a		many
@@ -211,24 +333,24 @@ This is			an			example of
 							spacing.
 pre ends here
 </pre>
+<br>
+<p>Example with paragraph:</p>
 <p> paragraph
 This is			an			example of
 		text with a		many
 							rare
 							spacing.
 </p>
+<p>Well, it seems that paragraphs behave like preformatted text too -.-</p>
 
-<hr>
-
-<h1>Figures &lt;figure&gt;</h1>
+<h4>Figures &lt;figure&gt;</h4>
 <figure>
 	<img src="../bortoslovo-1.jpg" alt="borto1">
 </figure>
 <figcaption>figcaption here</figcaption>
 
-<hr>
 
-<h1>Figure 2 &lt;figure&gt;</h1>
+<h4>Figure 2 &lt;figure&gt;</h4>
 
 <figure>
 <pre>
@@ -243,9 +365,8 @@ this is code element
 <figcaption>figcaption</figcaption>
 </figure>
 
-<hr>
-
-<h1>Tapenade (Olive Spread)</h1>
+<h3>Exercise</h3>
+<h4>Tapenade (Olive Spread)</h4>
 
 <p>This is a really simple dish to prepare and it's always 
 a big hit at parties. My father recommends:</p>
@@ -255,7 +376,7 @@ flavors have time to blend. Just bring it up to room
 temperature before you serve it. In the winter, try serving 
 it warm."</p></blockquote>
 
-<h2>Ingredients</h2>
+<h5>Ingredients</h5>
 
 <ul>
 <li>1 8oz. jar sundried tomatoes</li>
@@ -264,7 +385,7 @@ it warm."</p></blockquote>
 <li>1 t. capers</li>
 </ul>
 
-<h2>Instructions</h2>
+<h5>Instructions</h5>
 
 <ol>
 <li>Combine tomatoes and garlic in a food processor. Blend 
@@ -277,6 +398,9 @@ texture.</li>
 <li>Serve on thin toast rounds with goat cheese and fresh 
 basil garnish (optional).</li>
 </ol>
+
+
+
 <header>
 	<img src="bortoslovo-1_ico.jpg" alt="">
 	<h1>Header en la imagen y aca, h1 aca, abajao nav ul li</h1>
