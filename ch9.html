@@ -46,8 +46,114 @@ releases sent to your own in-box.</p>
 		 <li><label for="form-email">Email: <input type="email" name="email" id="form-email"></label></li>
 		 <li>Delivery instructions:<br>
 		 <textarea name="instructions" rows="4" cols="60" maxlength="400" id="form-story" placeholder="No more than 400 characters long"></textarea></li>
+	    <li>Another textarea:<br>
 		 <textarea name="instructions" rows="4" cols="60" maxlength="400" id="form-story" placeholder="No more than 400 characters long">inside textarea</textarea></li>
+		 <li>A third text area:<br>
+		 <textarea name="instructions" maxlength="400" id="form-story" placeholder="No more than 400 characters long">inside textarea</textarea></li>
+	    <li><label for="form-pswd">Password:</label><br><input type="password" name="pswd" maxlength="12" id="form-pswd"></li>
+		 <li><label for="song">Song: <input type="song" name="song" id="song" list="song-list">
+		 <datalist id="song-list">
+			<option value="an option">
+			<option value="another option">
+			<option value="a third option">
+		 </datalist>
+		 </label></li>
 	  </ul>
+	<p><input type="submit"></p> 
+	<input type="reset" value="clear fields">
+	<input type="submit" value="submit">
+
+	<p>Age</p>
+		<ol>
+			<li><input type="radio" name="age" value="20-" checked>20-</li>
+			<li><input type="radio" name="age" value="21-30">21-30</li>
+			<li><input type="radio" name="age" value="31-40">31-40</li>
+			<li><input type="radio" name="age" value="41+">41+</li>
+		</ol>
+	</fieldset>
+</form>
+
+<hr>
+
+<h2>Radio buttons</h2>
+
+<h3>1 form, 2 fieldset, 1 name value</h3>
+<form>
+	<fieldset>
+		<p>Age 2</p>
+			<p><input type="radio" name="age23" value="20-" checked>20-</p>
+			<p><input type="radio" name="age23" value="21-30">21-30</p>
+			<p><input type="radio" name="age23" value="31-40">31-40</p>
+			<p><input type="radio" name="age23" value="41+">41+</p>
+	</fieldset>
+	<fieldset>	
+		<p>Age 3</p>
+		<ul>
+			<li><input type="radio" name="age23" value="20-" checked>20-</li>
+			<li><input type="radio" name="age23" value="21-30">21-30</li>
+			<li><input type="radio" name="age23" value="31-40">31-40</li>
+			<li><input type="radio" name="age23" value="41+">41+</li>
+		</ul>
+	</fieldset>
+</form>
+
+<hr>
+
+<h3>1 form, 2 fieldset, 2 name value</h3>
+<form>
+	<fieldset>
+		<p>Age 4</p>
+			<p><input type="radio" name="age4" value="20-" checked>20-</p>
+			<p><input type="radio" name="age4" value="21-30">21-30</p>
+			<p><input type="radio" name="age4" value="31-40">31-40</p>
+			<p><input type="radio" name="age4" value="41+">41+</p>
+	</fieldset>
+	<fieldset>	
+		<p>Age 5</p>
+		<ul>
+			<li><input type="radio" name="age5" value="20-" checked>20-</li>
+			<li><input type="radio" name="age5" value="21-30">21-30</li>
+			<li><input type="radio" name="age5" value="31-40">31-40</li>
+			<li><input type="radio" name="age5" value="41+">41+</li>
+		</ul>
+	</fieldset>
+</form>
+
+<hr>
+
+
+<h3>2 form, 2 fieldset, 1 name value</h3>
+<form>
+	<fieldset>
+		<p>Age 6</p>
+			<p><input type="radio" name="age67" value="20-" checked>20-</p>
+			<p><input type="radio" name="age67" value="21-30">21-30</p>
+			<p><input type="radio" name="age67" value="31-40">31-40</p>
+			<p><input type="radio" name="age67" value="41+">41+</p>
+	</fieldset>
+</form>
+<form>
+	<fieldset>	
+		<p>Age 7</p>
+		<ul>
+			<li><input type="radio" name="age67" value="20-" checked>20-</li>
+			<li><input type="radio" name="age67" value="21-30">21-30</li>
+			<li><input type="radio" name="age67" value="31-40">31-40</li>
+			<li><input type="radio" name="age67" value="41+">41+</li>
+		</ul>
+	</fieldset>
+</form>
+
+<hr>
+
+<h2>Checkbox buttons</h2>
+
+<form>
+	<fieldset>
+		<p>Pick flavors:</p>
+			<p><input type="checkbox" name="flavor" value="strawberry" checked>Strawberry</p>
+			<p><input type="checkbox" name="flavor" value="vanilla" >Vanilla</p>
+			<p><input type="checkbox" name="flavor" value="chocolate" >Chocolate</p>
 	</fieldset>
 </form>
 
