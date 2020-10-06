@@ -2,33 +2,139 @@
 <html>
 	<head>
 		<meta charset="utf8">
-		<title>Beispiel1</title>
+		<title>Book 1 chapter 1</title>
 		<style>
 			body {
-				background-color: #fcd297;
-				margin: 5% 10%;
+				background-color: burlywood;
+				margin: 1% 5%;
+				font-family: sans-serif;
+			}
+			h1 {
+				text-align: center;
+				font-family: serif;
+				font-weight: normal;
+				text-transform: uppercase;
+				border-bottom: 2px solid steelblue;
+				margin-top: 20px;
+			}
+			h2 {
+				color: darkgreen;
+				font-size: 1.5em;
+			}
+			pre {
+				font-size: 15px;
+				-moz-tab-size: 3;
+				tab-size: 3;
 			}
 		</style>
 	</head>
-	<body>
-	<nav>
-		<a href="index.html">Back to main the main page</a>
-	</nav>
-<h1>h1 // Type Design</h1>
+<body>
+
+<nav>
+		<a href="../index.html">Back to main the main page</a>
+</nav>
+
+<h1>Chappter 4</h1>
+
+<h2>HTML element</h2>
+<p>&lt;elementname&gt;content&lt;/elementname&gt;</p>
+<p>Example:<br>
+&lt;h1&gt;Chapter 1&lt;/h1&gt;</p>
+
+<h2>Basic structure</h2>
+
+<!-- <pre style="font-size: 16px;"> -->
+<pre>
+&lt;!Doctype html&gt;
+&lt;html&gt;
+
+	&lt;head&gt;
+		&lt;meta charset="utf-8"&gt;
+		&lt;title&gt; Name of the &lt;page title&gt;
+	&lt;/head&gt;
+
+	&lt;body&gt;
+	Content of the page
+	&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<h2>Comments</h2>
+<p>&lt;!-- this is a comment --&gt;</p>
+
+<h2>Escaping characters</h2>
+<pre style="font-size: 150%;">
+&lt; = &amp;lt;
+&gt; = &amp;gt;
+&quot; = &amp;quot;
+&apos; = &amp;apos;
+&amp; = &amp;amp;
+</pre>
+
+<h1>h1 heading</h1>
+<h2>h2 heading</h2>
+<p>Here starts paragraph p
+Here start another line
+Here it is the third line.</p>
+<h3>h3 heading</h3>
+<h4>h4 heading</h4>
+<p>Another paragraph p.</p>
+<h4>h4 heading</h4>
+<p>More paragraphs p.</p>
+<h5>h5 heading</h5>
+<p>Another paragraph p.</p>
+<h6>h6 heading</h6>
+<p>hr after this line.</p>
+
 <hr>
-<h2>h2 // Serif Typefaces</h2>
-<p>Serif typefaces have small slabs at the ends of letter strokes.
-In general, serif fonts can make large amounts of text easier to
-read.</p>
-<h3>h3 // Baskerville</h3>
-<h4>h4 // Description</h4>
-<p>Description of the Baskerville typeface.</p>
-<h4>h4 // History</h4>
-<p>The history of the Baskerville typeface.</p>
-<h3>h3 // Georgia</h3>
-<p>Description and history of the Georgia typeface.</p>
-<h2>h2 // Sans-serif Typefaces</h2>
-<p>Sans-serif typefaces do not have slabs at the ends of strokes.</p>
+
+<h2>Empty elements</h2>
+<p>&lt;elementname&gt;</p>
+<p>&lt;hr&gt;: horizontal line</p>
+<p>&lt;br&gt;: break</p>
+<p>hr element under this text. Is that long horizontal line.</p>
+
+<hr>
+
+<h2>Attributes</h2>
+<p>attributename="value"</p>
+<p>Example:<br>
+&lt;element attributename="value"&gt;content&lt;/element&gt;</p>
+<p>Example 2:<br>
+&lt;element attribute1="value" attribute2="value"&gt;content&lt;/element&gt;</p>
+<p>Example 3:<br>
+&lt;img src="image.jpg" alt="car"&gt;</p>
+
+<h2>Images</h2>
+<p>&lt;img src="../bortoslovo-1.jpg" alt="bortoslovo" height="100px" width="50px"&gt;</p>
+<img src="../bortoslovo-1.jpg" alt="bortoslovo" height="100px" width="50px">
+
+<h2>Syle sheet</h2>
+<pre>
+	&lt;head&gt;
+		&lt;meta charset="utf-8"&gt;
+		&lt;title&gt;Page title&lt;/title&gt;
+		&lt;style&gt;
+		body {
+			background-color: #faf2e4;
+			margin: 0 10%;
+			font-family: sans-serif;
+		}
+		h1 {
+			text-align: center;
+			font-family: serif;
+			font-weight: normal;
+			text-transform: uppercase;
+			border-bottom: 1px solid #57b1dc;
+			margin-top: 30px;
+		}
+		h2 {
+			color: #d1633c;
+			font-size: 1em;
+		}
+		&lt;/style&gt;
+	&lt;/head&gt;
+</pre>
 
 <hr>
 
@@ -36,42 +142,35 @@ read.</p>
 <ol start="17">
 <li>ol li // Serif</li>
 <li>li // Sans-serif</li>
-<li>Script</li>
-<li>Display</li>
-<li>Dingbats</li>
+<li>Random</li>
+<li>Words</li>
+<li>In the internet</li>
 </ol>
 
 <hr>
 
 <h1>Description lists</h1>
 <dl>
-<dt>dt // Linotype</dt>
-<dd>dd // Line-casting allowed type to be selected, used, then recirculated
-into the machine automatically. This advance increased the speed of
-typesetting and printing dramatically.</dd>
-<dt>dt // Photocomposition</dt>
-<dd>dd // Typefaces are stored on film then projected onto photo-sensitive
-paper. Lenses adjust the size of the type.</dd>
-<dt>dt // Digital type</dt>
-<dd><p>dd p // Digital typefaces store the outline of the font shape in a
-format such as Postscript. The outline may be scaled to any size for
-output.</p>
-<p>dd p // Postscript emerged as a standard due to its support of
-graphics and its early support on the Macintosh computer and Apple
-laser printer.</p>
+<dt>dt // description term</dt>
+<dd>dd // description definition</dd>
+<dt>dt // another description term</dt>
+<dd>dd // another description definition</dd>
+<dt>dt // and another description term</dt>
+<dd><p>dd p // description definition inside parahraph p.</p>
+<p>dd p // another paragraph p inside the same description definition.</p>
 </dd>
 </dl>
 
 <hr>
 
-<h1>nesting unordered lists ul </h1>
+<h1>Nesting unordered lists ul </h1>
 <ul>
-<li>outside</li>
-<li>outside 2
+<li>first level ul</li>
+<li>first level ul 2</li>
 <ul>
-<li>inside</li>
-<li>inside 2</li>
-<li>inside 3</li>
+<li>ul inside ul</li>
+<li>ul inside ul 2</li>
+<li>ul inside ul 3</li>
 </ul>
 </li>
 </ul>
@@ -80,10 +179,10 @@ laser printer.</p>
 
 <h1>More description lists</h1>
 <dl>
-<dt>dt, dl above</dt>
+<dt>dt, dl above this</dt>
 <dd>dd1</dd>
 <dd>dd2</dd>
-<dt>dt2</dt>
+<dt>dt 2</dt>
 <dd>dd3</dd>
 <dd>dd4</dd>
 <dd>dd5</dd>
@@ -92,15 +191,14 @@ laser printer.</p>
 <hr>
 
 <h1>Blockquote</h1>
-<p>paragraph // Renowned type designer, Matthew Carter, has this to say about his
-profession:</p>
+<p>paragraph // Blockquote incoming:</p>
 <blockquote>
-<p>blockquote paragraph 1 // Our alphabet hasn't changed in eons; there isn't much latitude in
-what a designer can do with the individual letters.</p>
-<p>blockquote paragraph 2 // Much like a piece of classical music, the score is written
-down. It's not something that is tampered with, and yet, each
-conductor interprets that score differently. There is tension in
-the interpretation.</p>
+<p>blockquote paragraph 1 // First line inside paragraph p inside blockquote.
+Second line of first paragraph p inside blockquote.</p>
+<p>blockquote paragraph 2 // First line inside second paragraph p inside same blockquote.
+Second line inside second paragraph p inside same blockquote.
+Third line inside second paragraph p inside same blockquote.
+Fourth line inside second paragrap p inside same blockquote.</p>
 </blockquote>
 
 <hr>
@@ -108,23 +206,23 @@ the interpretation.</p>
 <h1>Preformatted text</h1>
 <pre>pre starts here
 This is			an			example of
-		text with a		lot of
-							curious
-							whitespace.
+		text with a		many
+							rare
+							spacing.
 pre ends here
 </pre>
 <p> paragraph
 This is			an			example of
-		text with a		lot of
-							curious
-							whitespace.
+		text with a		many
+							rare
+							spacing.
 </p>
 
 <hr>
 
 <h1>Figures &lt;figure&gt;</h1>
 <figure>
-	<img src="bortoslovo-1.jpg" alt="borto1">
+	<img src="../bortoslovo-1.jpg" alt="borto1">
 </figure>
 <figcaption>figcaption here</figcaption>
 
