@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Book 1 chapter 5</title>
+		<style>
+			body {
+				background-color: burlywood;
+				margin: 1% 5%;
+				font-family: sans-serif;
+			}
+			h1 {
+				text-align: center;
+				font-family: serif;
+				font-weight: normal;
+				text-transform: uppercase;
+				border-bottom: 2px solid steelblue;
+				margin-top: 20px;
+			}
+			h2 {
+				color: darkgreen;
+				font-size: 1.5em;
+			}
+			h3 {
+				color: darkred;
+			}
+			h4 {
+				color: navy;
+			}
+			h5 {
+				color: indigo;
+				font-size: 1em;
+			}
+			h6 {
+				color: purple;
+				font-size: 1em;
+			}
+			pre {
+				font-size: 1.3em;
+				-moz-tab-size: 3;
+				tab-size: 3;
+			}
+			table {
+				border: 1px solid black;
+			}
+			td, th {
+				border: 1px solid black;
+			}
+		</style>
+				<!-- margin-top: 20px; -->
+	</head>
+<body>
+
+<nav>
+		<a href="../index.html">Back to main the main page</a>
+</nav>
+
+<h1>Chapter 5</h1>
+
+<h2>Marking up text</h2>
+
+<h3>Paragraphs</h3>
+<p>&lt;p&gt;content&lt;/p&gt;</p>
+
+<h3>Headings</h3>
+<p>Syntax</p>
+<p>
+&lt;h1&gt;content&lt;/h1&gt;<br>
+&lt;h2&gt;content&lt;/h2&gt;<br>
+&lt;h3&gt;content&lt;/h3&gt;<br>
+&lt;h4&gt;content&lt;/h4&gt;<br>
+&lt;h5&gt;content&lt;/h5&gt;<br>
+&lt;h6&gt;content&lt;/h6&gt;<br>
+</p>
+
+<h3>Horizontal rule - Thematic break</h3>
+<p>&lt;hr&gt;</p>
+
+<h3>Lists</h3>
+
+<h4>Unordered list &lt;ul&gt;</h4>
+<p>Sytax:</p>
+<pre>
+	&lt;ul&gt;
+		&lt;li&gt;content 1&lt;/li&gt;
+		&lt;li&gt;content 2&lt;/li&gt;
+		&lt;li&gt;content 3&lt;/li&gt;
+		&lt;li&gt;content 4&lt;/li&gt;
+	&lt;ul&gt;
+</pre>
+<p>Example:</p>
+<ul>
+	<li>content 1</li>
+	<li>content 2</li>
+	<li>content 3</li>
+	<li>content 4</li>
+</ul>
+
+<h4>Ordered list &lt;ol&gt;</h4>
+<p>Syntax:</p>
+<pre>
+	&lt;ol&gt;
+		&lt;li&gt;content 1&lt;/li&gt;
+		&lt;li&gt;content 2&lt;/li&gt;
+		&lt;li&gt;content 3&lt;/li&gt;
+		&lt;li&gt;content 4&lt;/li&gt;
+	&lt;ol&gt;
+</pre>
+<p>Starting with a different order</p>
+<pre>
+	&lt;ol start="17"&gt;
+		&lt;li&gt;content 1&lt;/li&gt;
+		&lt;li&gt;content 2&lt;/li&gt;
+		&lt;li&gt;content 3&lt;/li&gt;
+		&lt;li&gt;content 4&lt;/li&gt;
+	&lt;ol&gt;
+</pre>
+<p>Example:</p>
+<ol start="17">
+<li>ol li // Serif</li>
+<li>li // Sans-serif</li>
+<li>Random</li>
+<li>Words</li>
+<li>In the internet</li>
+</ol>
+
+<h4>Description list &lt;dl&gt;</h4>
+<pre>
+&lt;dl&gt;: description list
+&lt;dt&gt;: description term 
+&lt;dd&gt;: description definition 
+</pre>
+
+<p>Syntax:</p>
+<pre>
+&lt;dl&gt;
+	&lt;dt&gt;description term&lt;/dt&gt;
+		&lt;dd&gt;description definition&lt;/dd&gt;
+	&lt;dt&gt;another description term&lt;/dt&gt;
+		&lt;dd&gt;another description definition&lt;/dd&gt;
+	&lt;dt&gt;and another description term&lt;/dt&gt;
+		&lt;dd&gt;&lt;p&gt;description definition inside parahraph p&lt;/p&gt;
+				&lt;p&gt;another paragraph p inside the same dd&lt;/p&gt;
+		&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+
+<p>Example:</p>
+<dl>
+	<dt>dt // description term</dt>
+		<dd>dd // description definition</dd>
+	<dt>dt // another description term</dt>
+		<dd>dd // another description definition</dd>
+	<dt>dt // and another description term</dt>
+		<dd><p>dd p // description definition inside parahraph p.</p>
+			 <p>dd p // another paragraph p inside the same dd.</p>
+		</dd>
+</dl>
+
+<h4>Nesting unordered lists &lt;ul&gt;</h4>
+<p>W3C does not validate nesting ul</p>
+<p>Syntax:</p>
+<pre>
+&lt;ul&gt;
+	&lt;li&gt;content&lt;/li&gt;
+	&lt;li&gt;content&lt;/li&gt;
+	&lt;ul&gt;
+		&lt;li&gt;content&lt;/li&gt;
+		&lt;li&gt;content&lt;/li&gt;
+		&lt;li&gt;content&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<h4>Nesting description lists</h4>
+<p>Syntax:</p>
+<pre>
+&lt;dl&gt;
+	&lt;dt&gt;term 1&lt;/dt&gt;
+		&lt;dd&gt;definition 1&lt;/dd&gt;
+		&lt;dd&gt;definition 2&lt;/dd&gt;
+	&lt;dt&gt;term 2&lt;/dt&gt;
+		&lt;dd&gt;definition 3&lt;/dd&gt;
+		&lt;dd&gt;definition 4&lt;/dd&gt;
+		&lt;dd&gt;definition 5&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+
+<p>Example:</p>
+<dl>
+<dt>dt, dl above this</dt>
+	<dd>dd1</dd>
+	<dd>dd2</dd>
+<dt>dt 2</dt>
+	<dd>dd3</dd>
+	<dd>dd4</dd>
+	<dd>dd5</dd>
+</dl>
+
+<h3>Additional content elements</h3>
+
+<h4>Blockquote &lt;blockquote&gt;</h4>
+<p>Syntax:</p>
+<p>&lt;blockquote&gt;content&lt;/blockquote&gt;
+<p>Example:</p>
+<p>paragraph // Blockquote incoming:</p>
+<blockquote>
+<p>blockquote paragraph 1 // First line inside paragraph p inside blockquote.
+Second line of first paragraph p inside blockquote.</p>
+<p>blockquote paragraph 2 // First line inside second paragraph p inside same blockquote.
+Second line inside second paragraph p inside same blockquote.
+Third line inside second paragraph p inside same blockquote.
+Fourth line inside second paragrap p inside same blockquote.</p>
+</blockquote>
+
+<h4>Preformatted text &lt;pre&gt;</h4>
+<p>Syntax:</p>
+<pre>
+&lt;pre&gt;pre starts here
+This is			an			example of
+		text with a		many
+							rare
+							spacing.
+pre ends here
+&lt;/pre&gt;
+</pre>
+
+<br>
+
+<p>Example:</p>
+<pre>pre starts here
+This is			an			example of
+		text with a		many
+							rare
+							spacing.
+pre ends here
+</pre>
+
+<br>
+
+<p>Example with paragraph:</p>
+<p> paragraph
+This is			an			example of
+		text with a		many
+							rare
+							spacing.
+</p>
+
+<h4>Figures &lt;figure&gt;</h4>
+<p>Syntax:</p>
+<pre>
+&lt;figure&gt;
+	&lt;img src="../bortoslovo-1.jpg" alt="borto1"&gt;
+&lt;figcaption&gt;figcaption here&lt;/figcaption&gt;
+&lt;/figure&gt;
+</pre>
+
+<p>Example:</p>
+<figure>
+	<img src="../bortoslovo-1.jpg" alt="borto1" height="100" width="50">
+<figcaption>figcaption here</figcaption>
+</figure>
+
+<p>CSS rule:</p>
+
+<pre>
+&lt;figure&gt;
+	&lt;pre&gt;
+		&lt;code&gt;
+		body {
+			background-color: #000;
+			color: red;
+		}
+		this is code element
+		&lt;/code&gt;
+	&lt;/pre&gt;
+	&lt;figcaption&gt;CSS rule example.&lt;/figcaption&gt;
+&lt;/figure&gt;
+</pre>
+
+<p>Example:</p>
+<figure>
+	<pre>
+		<code>
+		body {
+			background-color: #000;
+			color: red;
+		}
+		this is inside code element
+		</code>
+	</pre>
+	<figcaption>CSS rule example.</figcaption>
+</figure>
+
+<h4>Random example?</h4>
+<header>
+	<img src="../bortoslovo-1_ico.jpg" alt="logo">
+	<h4>This is h4, header element with img element above this</h4>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="recipe_1.html">Schnitzel recipe</a></li>
+			</ul>
+		</nav>
+</header>
+<p>page content goes here</p>
+
+<h3>Orginizing content</h3>
+
+<h4>Main &lt;main&gt;</h4>
+<p>Only one main element for page</p>
+<p><b>Syntax:</b></p>
+<pre>
+&lt;body&gt;
+&lt;header&gt;...&lt;/header&gt;
+&lt;main&gt;
+&lt;h1&gt;Title&lt;/h1&gt;
+&lt;!-- more content --&gt;
+&lt;/main&gt;
+&lt;/body&gt;
+</pre>
+
+<p><b>Example:</b></p>
+<pre>
+&lt;main&gt;
+	&lt;h2&gt;Here is the &lt;main&gt; element&lt;/h2&gt;
+&lt;/main&gt;
+</pre>
+
+<h4>Headers and footers</h4>
+
+<h5>Headers</h5>
+<p><b>Syntax:</b></p>
+<p>&lt;body&gt;<p>
+<header>
+<img src="../bortoslovo-1.jpg" alt="logo">
+<h2>h2 title here, header and img above this</h2>
+<nav>
+<ul>
+	<li><a href="/">random link 1 inside nav</a></li>
+	<li><a href="/">random link 2 inside nav</a></li>
+	<li><a href="/">random link 3 inside nav</a></li>
+</ul>
+</nav>
+</header>
+&lt;!--page content--&gt;
+<p>&lt;body&gt;</p>
+
+<p><b>Example 2:</b></p>
+<article>
+	<header>
+		<h5>h5 here, header element over this</h5>
+		<p>paragraph here with time element right after this <time datetime="2019-11-11">November 11,
+2017</time></p>
+	</header>
+<p>Article content start here &gt;&lt;</p>
+</article>
+	<nav>
+	<ul>
+		<li><a href="index.html">Home, inside nav</a></li>
+		<li><a href="index.html">Previous, inside nav</a></li>
+		<li><a href="index.html">Next, inside nav</a></li>
+	</ul>
+	</nav>
+
+<h5>Footers</h5>
+<p><b>Example:</b></p>
+<article>
+	<header>
+	<h5>h5 here, inside article and header</h5>
+	<p>by Borto Slovo, <time datetime="2017-11-11">April 01, 2020</time></p>
+	</header>
+&lt;!-- article content here --&gt;
+<footer>
+<p><small>This is inside footer, p, small. Copyright &copy;2020 Borto Slovo.</small></p>
+<nav>
+	<ul>
+		<li><a href="/">Previous, inside footer, nav, ul, li</a></li>
+		<li><a href="/">Next, inside footer, nav, ul, li</a></li>
+	</ul>
+</nav>
+</footer>
+</article>
+
+<h4>Sections and Articles</h4>
+<p><b>Example:</b></p>
+<section>
+	<h5>h5 heading inside section</h5>
+	<ul>
+		<li>ul li inside section</li>
+	</ul>
+</section>
+
+<p><b>Example 2:</b></p>
+<section>
+	<h5>h5 inside section</h5>
+	<p>p inside section</p>
+	<ul>
+		<li>ul li inside section</li>
+	</ul>
+</section>
+
+<p><b>Example 3:</b></p>
+<p>Sections inside an article</p>
+<article>
+	<h5>h5 inside article</h5>
+	<section>
+		<h6>h6 inside article, section</h6>
+		<p>p inside article, section</p>
+	</section>
+	<section>
+		<h5>h5 inside same article, another section</h5>
+		<p>p inside same article, another section</p>
+	</section>
+</article>
+
+<p><b>Example 4:</b></p>
+<p>Articles inside a section</p>
+<section id="essays9">
+<h4>Sections and articles needs heading</h4>
+	<article>
+		<h5>h5, article inside section</h5>
+		<p>content</p>
+	</article>
+
+	<article>
+		<h5>h5, another article inside same section</h5>
+		<p>content</p>
+	</article>
+</section>
+
+<h4>Aside &lt;aside&gt;...&lt;/aside&gt;</h4>
+<p>Example:</p>
+<h5>h5 heading</h5>
+<p>content</p>
+<p>more content</p>
+<aside>
+<h5>h5, inside aside</h5>
+<ul>
+	<li><a href="">random link 1 inside aside</a></li>
+	<li><a href="">random link 2 inside aside</a></li>
+</ul>
+</aside>
+
+<h4>Navigation &lt;nav&gt;...&lt;/nav&gt;</h4>
+<p>Primary navigation around a site.</p>
+<nav>
+	<ul>
+		<li><a href="">link 1 inside li, ul, nav</a></li>
+		<li><a href="">link 2 inside li, ul, nav</a></li>
+		<li><a href="">link 3 inside li, ul, nav</a></li>
+	</ul>
+</nav>
+
+<h4>Addresses &lt;address&gt;...&lt;/address&gt;</h4>
+<p>Generally at the end of document, section or article</p>
+<p><b>Example:</b></p>
+<address>
+Powered by <a href="../index.html">Borto Slovo, inside address</a>,
+<a href="../index.html">Borto Slovo Solutions, inside address</a>
+</address>
+
+<h3>Inline elements</h3>
+
+<table>
+	<tr>
+		<th>Element</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>a</td>
+		<td>anchor - hypertext link</td>
+	</tr>
+	<tr>
+		<td>abbr</td>
+		<td>abbreviation</td>
+	</tr>
+	<tr>
+		<td>b</td>
+		<td>bold</td>
+	</tr>
+	<tr>
+		<td>bdi</td>
+		<td>text that may have directional requirements</td>
+	</tr>
+	<tr>
+		<td>bdo</td>
+		<td>bidirectional override - indicates text direction</td>
+	</tr>
+	<tr>
+		<td>br</td>
+		<td>line break</td>
+	</tr>
+	<tr>
+		<td>cite</td>
+		<td>citation</td>
+	</tr>
+	<tr>
+		<td>code</td>
+		<td>code sample</td>
+	</tr>
+	<tr>
+		<td>data</td>
+		<td>machine readable data</td>
+	</tr>
+	<tr>
+		<td>del</td>
+		<td>deleted text</td>
+	</tr>
+	<tr>
+		<td>dfn</td>
+		<td>defining instance or first occurrence of a term</td>
+	</tr>
+	<tr>
+		<td>em</td>
+		<td>emphasized</td>
+	</tr>
+	<tr>
+		<td>i</td>
+		<td>italic</td>
+	</tr>
+	<tr>
+		<td>ins</td>
+		<td>inserted text</td>
+	</tr>
+	<tr>
+		<td>kbd</td>
+		<td>keyboard - text entered by a user</td>
+	</tr>
+	<tr>
+		<td>mark</td>
+		<td>marked text</td>
+	</tr>
+	<tr>
+		<td>q</td>
+		<td>quotation</td>
+	</tr>
+	<tr>
+		<td>ruby, rt, rp</td>
+		<td>annotations or pronunciation guides under East Asian typography</td>
+	</tr>
+	<tr>
+		<td>s</td>
+		<td>strike-through</td>
+	</tr>
+	<tr>
+		<td>samp</td>
+		<td>sample output from programs</td>
+	</tr>
+	<tr>
+		<td>small</td>
+		<td>small</td>
+	</tr>
+	<tr>
+		<td>span</td>
+		<td>span</td>
+	</tr>
+	<tr>
+		<td>strong</td>
+		<td>strong</td>
+	</tr>
+	<tr>
+		<td>sub</td>
+		<td>subscript</td>
+	</tr>
+	<tr>
+		<td>sup</td>
+		<td>superscript</td>
+	</tr>
+	<tr>
+		<td>time</td>
+		<td>machine readable time data</td>
+	</tr>
+	<tr>
+		<td>u</td>
+		<td>underline</td>
+	</tr>
+	<tr>
+		<td>var</td>
+		<td>variable</td>
+	</tr>
+	<tr>
+		<td>wbr</td>
+		<td>word break</td>
+	</tr>
+</table>
+
+<h4>Text-level inline elements</h4>
+
+<h5>Emphasized text &lt;em&gt;...&lt;/em&gt;</h5>
+<p><em>Emphasized</em> text looks smart.</p>
+<p>Emphasized <em>text</em> looks smart.</p>
+
+<h5>Important text &lt;strong&gt;</h5>
+<p>When writing in html <strong>pay attention to all the elements</strong>.</p>
+
+<h5>Bold &lt;b&gt;</h5>
+<p>The famous bold
+<b>mark up</b>.</p>
+
+<h5>Italic &lt;i&gt;</h5>
+<p>Random text and <i>wow italic!</i></p>
+
+<h5>Strike-through &lt;s&gt;</h5>
+<p>I want to thank to <s>Some Random Guy</s>, Cheesus and Borto Slovo.</p>
+
+<h5>Underline &lt;u&gt;</h5>
+<p>When to use underline ... <u>Who knows</u>.</p>
+
+<h5>Smaller &lt;small&gt;</h5>
+<p><small>Comment or side note to the main text.</small></p>
+
+<h5>Short quotations &lt;q&gt;...&lt;/q&gt;</h5>
+<p>As Borto Slovo once said: <q>Practice makes perfect.</q></p>
+
+<h5>Abbreviations and acronyms &lt;abbr&gt;...&lt;/abbr&gt;</h5>
+<p>Provides information to search engines, screen readers and other devices/software</p>
+<abbr title="Points">pts.</abbr>
+<abbr title="American Type Founders">ATF</abbr>
+
+<h5>Citations &lt;cite&gt;...&lt;/cite&gt;</h5>
+<p>Passages of this article were inspired by <cite>The Complete Manual
+of Typography</cite> by James Felici.</p>
+
+<h5>Defining terms &lt;dfn&gt;...&lt;/dfn&gt;</h5>
+<p><dfn>Script typefaces</dfn> are based on handwriting.</p>
+
+<h5>Program code elements 
+&lt;code&gt; &lt;var&gt; &lt;samp&gt; &lt;kbd&gt;</h5>
+<pre>
+&lt;code&gt;...&lt;/code&gt;
+Code
+
+&lt;var&gt;...&lt;/var&gt;
+Variable
+
+&lt;samp&gt;...&lt;samp&gt;
+Program sample
+
+&lt;kbd&gt;...&lt;/kbd&gt;
+User-entered keyboard strokes
+</pre>
+
+<h5>Subscript and superscript
+&lt;sub&gt; &lt;sup&gt;</h5>
+<p><b>Example:</b></p>
+<p>H<sub>2</sub>0</p>
+<p>E=MC<sup>2</sup></p>
+
+<h5>Higlighted text &lt;mark&gt;</h5>
+<p><b>Example:</b></p>
+<p>Some random  text and ... Bang! <mark>Marked text!</mark> More random text and ... Wow ... Flash! <mark>Another marked text!</mark></p>
+
+<h5>Dates and times &lt;time&gt;</h5>
+<p>W3C doesn't allow ul as child of dl in this context</p>
+<p><b>Format:</b></p>
+<pre>
+YYYY-MM-DDThh:mm:ss.ddd+hh:mm
+YYYY-MM-DDThh:mm:ss.ddd-hh:mm
+
+YYYY-MM-DD    = date
+Thh:mm:ss.ddd = time
++hh:mm        = time zone
+-hh:mm        = time zone
+</pre>
+
+<p>Example:</p>
+<dl>
+			<dt>Time only: 8:30 p.m.</dt>
+			<dd>&lt;time datetime="20:30"&gt;8:30p.m.&lt;/time&gt;</dd>
+			<dd><time datetime="20:30">8:30p.m.</time></dd>
+			<dt>Date only: June 10, 2010</dt>
+			<dd><time datetime="2010-06-10">June 10, 2010</time></dd>
+</dl>
+
+<h5> Dates and times. Round 2 xD View the page source :)</h5>
+<p><b>Examples:</b></p>
+<p>Time only: 8:30 p.m.</p>
+<time datetime="20:30">8:30p.m.</time>
+<br>
+<br>
+<p>Date only: June 10, 2010</p>
+<time datetime="2010-06-10">June 10, 2010</time>
+<br>
+<br>
+<p>Date and time: Sept. 1, 1990, 1:11a.m.</p>
+<time datetime="1990-09-01T01:11:00">Sept. 1, 1990, 1:11a.m.</time>
+<br>
+<br>
+<p>Date and time, with time zone information: 8:00am on July 10, 2010, in
+Some place, ITW</p>
+<time datetime="2010-07-10T08:00:00-05:00">July 10, 2010, 8am,
+Some place, ITW</time>
+<br>
+
+<h5>Machine-readable information &lt;data&gt;</h5>
+<p>Example:</p>
+<data value="10">Ten</data>
+<br>
+<br>
+<p>Example:</p>
+<data value="978-1-449-39319-9">CSS: The Definitive Guide</data>
+
+
+<h5>Inserted and deleted text
+&lt;ins&gt; &lt;del&gt;</h5>
+<p>Used to mark up modifications/editions in a document.</p>
+<p>Example:</p>
+<p>Super nintendo charles: <del title="retired">Tom Jones</del> <ins>Borto Slovo</ins></p>
+
+<h4>Breaks</h4>
+
+<h5>Line breaks &lt;br&gt;</h5>
+<p>I'm writing <br>in vim <br><br>Cause I do not know<br>how to quit</p>
+<br>
+<p>But don't do:</p>
+<p>Rice<br>
+Bread<br>
+Tomato
+</p>
+<br>
+<p>Do this instead:</p>
+<ul>
+	<li>Rice</li>
+	<li>Bread</li>
+	<li>Tomato</li>
+</ul>
+
+<h5>Word breaks &lt;wbr&gt;</h5>
+<p>Change size of the windows to see how it breaks</p>
+<p><em>somerandom<wbr>longword<wbr>likeingerman</em>!</p>
+
+<hr>
+
+<h3>Exercise 5-2</h3>
+
+<article>
+<header>
+<p>posted by Borto Slovo, <time datetime="2010-11-10">November 10, 2010</time></p>
+</header>
+
+<h3>Low and Slow</h3>
+<p>This week I am <em>extremely</em> excited a bout a new cooking 
+technique called <dfn><i>sous vide</i></dfn>. In <i>sous vide</i> 
+cooking, you submerge the food (usually vacuum-sealed in plastic)
+into a water bath that is precisely set to the target temperature
+you want the food to be cooked to. In his book, <cite>Cooking for
+Greeks</cite>, Jeff Potter describes it as <q>ultra-low-temperature
+poaching.</q></p>
+<p>Next month, we will be serving <b><i>Sous Vide</i> Salmon with
+Dill Hollandaise</b>. To reserve a seat at the chef table, contact
+us before <time datetime="2016-11-30">November 30</time>.</p>
+
+<address>
+blackgoose@example.com<br>
+555-336-1800
+</address>
+
+<p><small>Warning: <i>Sous vide</i> coooked salmon is not pasteurized.
+Avoid it if you are pregnant or have immunity issues. </small></p>
+</article>
+
+<hr>
+
+<h3>Generic elements - div and span</h3>
+
+<h4>&lt;div&gt;...&lt;/div&gt;</h4>
+<pre>
+&lt;div&gt;...&lt;/div&gt;
+Generic block-level element
+
+&lt;span&gt;...&lt;/span&gt;
+Generic inline element
+</pre>
+<br>
+<p>Example:</p>
+<div class="listing2">
+	<img src="../bortoslovo-1.jpg" alt="" height="100" width="50">
+	<p><cite>Borto Slovo cooking guide</cite>, Borto Slovo</p>
+	<p>The best chef in the world.</p>
+</div>
+<br>
+<p>Example:</p>
+<div id="news">
+	<h6>Borto Slovo News</h6>
+	<p>I've been working on ...</p>
+	<p>Last but not least ... </p>
+</div>
+
+<h4>&lt;span&gt;...&lt;/span&gt;</h4>
+<p>Example:</p>
+<ul>
+<li>Borto: <span class="tel">999.8888</span></li>
+<li>Slovo: <span class="tel">888.7777</span></li>
+<li>Joseph: <span class="tel">888.1111</span></li>
+<li>Mary: <span class="tel">999.5555</span></li>
+</ul>
+
+
+
+<br>
+<br>
+
+<h4>id and class attributes</h4>
+
+<h5>&lt;id&gt;...&lt;/id&gt;</h5>
+<p>Example:</p>
+<div id="ISBN0321127307c">
+<img src="../placeholder1.png" alt="" height="100" width="100">
+<p><cite>The Complete Manual of Typography</cite>, James Felici</p>
+<p>A combination of type history and examples of good and bad type.
+</p>
+</div>
+
+<br>
+
+<p>Example:</p>
+<div id="ISBN0881792063c">
+<img src="../placeholder2.png" alt="" height="100" width="100">
+<p><cite>The Elements of Typographic Style</cite>, Robert Bringhurst
+</p>
+<p>This lovely, well-written book is concerned foremost with creating
+beautiful typography.</p>
+</div>
+
+<br>
+
+<p>Example:</p>
+<section id="news4">
+<h6>section article h6</h6>
+<p>section with id</p> 
+</section>
+
+<aside id="links2">
+<p>aside with id</p>
+</aside>
+
+<br>
+
+<h4>&lt;class&gt;...&lt;/class&gt;</h4>
+<p>Example:</p>
+<div id="ISBN0321127307a" class="listing">
+<header>
+<img src="../placeholder1.png" alt="" height="100" width="100">
+<p><cite>The Complete Manual of Typography</cite>, James Felici</p>
+</header>
+<p class="description">A combination of type history and examples of
+good and bad type.</p>
+</div>
+
+<p>Example:</p>
+<div id="ISBN0881792063a" class="listing">
+<header>
+<img src="../placeholder2.png" alt="" height="100" width="100">
+<p><cite>The Elements of Typographic Style</cite>, Robert Bringhurst
+</p>
+</header>
+<p class="description">This lovely, well-written book is concerned
+foremost with creating beautiful typography.</p>
+</div>
+
+<p>Example:</p>
+<div id="ISBN0321127307b" class="listing book">
+<img src="placeholder1.png" alt="CMT cover">
+<p><cite>The Complete Manual of Typography</cite>, James Felici</p>
+<p class="description">A combination of type history and examples of
+good and bad type.</p>
+</div>
+
+<p>Example:</p>
+<div id="ISBN0881792063b" class="listing book">
+<img src="placeholder2.png" alt="ETS cover">
+<p><cite>The Elements of Typographic Style</cite>, Robert Bringhurst
+</p>
+<p class="description">This lovely, well-written book is concerned
+foremost with creating beautiful typography.</p>
+</div>
+
+<h4>global attributes</h4>
+<p>Example:</p>
+<ol id="directions">
+<li>...</li>
+<li>...</li>
+<li>...</li>
+</ol>
+
+<h3>ARIA</h3>
+
+<h4>Roles</h4>
+
+<p>Example:</p>
+<ul id="tabs" role="toolbar">
+<li>A-G</li>
+<li>H-O</li>
+<li>P-T</li>
+<li>U-Z</li>
+</ul>
+
+<br>
+
+<p>Example:</p>
+<div id="status" role="alert">You are no longer connected to the
+server.</div>
+
+<br>
+
+<p>Example:</p>
+<pre>
+&lt;nav role="navigation"&gt;
+&lt;header role="banner"&gt;
+&lt;main role="main"&gt;
+&lt;aside role="complementary"&gt;
+&lt;footer role="contentinfo"&gt;
+</pre>
+
+<p>Notes from W3C:</p>
+<ul>
+	<li>The navigation role is unnecessary for element nav.</li>
+	<li>The banner role is unnecessary for element header.</li>
+	<li>The main role is unnecessary for element main.</li>
+	<li>The complementary role is unnecessary for element aside.</li>
+	<li>The content info role is unnecessary for element footer</li>
+</ul>
+
+<h4>Structured data</h4>
+
+<h5>microformats</h5>
+<div class="h-card">
+<p class="p-name">Cindy Sherman</p>
+<p class="p-tel">555.999-2456</p>
+</div>
+
+<h5>microdata</h5>
+<div itemscope itemtype="http://schema.org/Person">
+<p itemprop="name">Cindy Sherman</p>
+<p itemprop="telephone">555.999-2456</p>
+</div>
+
+<h5>RDFa and RDFa Lite</h5>
+<div vocab="http://schema.org" typeof="Person">
+<p property="name">Cindy Sherman</p>
+<p property="telephone">555.999-2456</p>
+</div>
+
+<h5>JSON-LD</h5>
+<script type="application/ld+json">
+{
+"@context": "http://schema.org/",
+"@type": "Person",
+"name": "Cindy Sherman"
+"telephone": "555.999-2456"
+}
+</script>
+
+<h3>Escaping characters</h3>
+<pre style="font-size: 1.35em;">
+&lt;	&amp;lt;
+&lt;	&amp;#60;
+&gt;	&amp;gt;
+&quot;	&amp;quot;
+&apos;	&amp;apos;
+&amp;		&amp;amp;
+</pre>
+
+<br>
+
+<pre>
+random stuff
+</pre>
+
+<br>
+
+<h4>HTML syntax characters</h4>
+<table>
+	<caption>Characters references</caption>
+	<tr>
+		<th>Character</th>
+		<th>Description</th>
+		<th>Entity name</th>
+		<th>Decimal no.</th>
+		<th>Hexadecimal no.</th>
+	</tr>
+	<tr>
+		<td>&lt;</td>
+		<td>less than</td>
+		<td>&amp;lt;</td>
+		<td>&amp;#060;</td>
+		<td>&amp;#x3C;</td>
+	</tr>
+	<tr>
+		<td>&gt;</td>
+		<td>greater than</td>
+		<td>&amp;gt;</td>
+		<td>&amp;#062;</td>
+		<td>&amp;#x3E;</td>
+	</tr>
+	<tr>
+		<td>"</td>
+		<td>quotation mark</td>
+		<td>&amp;quot;</td>
+		<td>&amp;#034;</td>
+		<td>&amp;#x22;</td>
+	</tr>
+	<tr>
+		<td>'</td>
+		<td>apostrophe</td>
+		<td>&amp;apos;</td>
+		<td>&amp;#039;</td>
+		<td>&amp;#x27;</td>
+	</tr>
+	<tr>
+		<td>&amp;</td>
+		<td>ampersand</td>
+		<td>&amp;amp;</td>
+		<td>&amp;#038;</td>
+		<td>&amp;#x26;</td>
+	</tr>
+</table>
+
+<br>
+
+<h3>Invisible / ambiguous characters</h3>
+
+<h4>non-breaking space &amp;nbsp;</h4>
+<p>Example:</p>
+<p>Random stuf and silly text to fill the line so one can see the property of this "thing": Borto&nbsp;Slovo</p>
+
+<br>
+<table>
+	<caption>Invisible characters and their character references</caption>
+		<tr>
+			<th>Character</th>
+			<th>Description</th>
+			<th>Entity name</th>
+			<th>Decimal no.</th>
+			<th>Hexadecimal no.</th>
+		</tr>
+		<tr>
+			<td>non-printing</td>
+			<td>non-breaking space</td>
+			<td>&amp;nbsp;</td>
+			<td>&amp;#160;</td>
+			<td>&amp;#xA0;</td>
+		</tr>
+		<tr>
+			<td>non-printing</td>
+			<td>En space</td>
+			<td>&amp;ensp;</td>
+			<td>&amp;#8194;</td>
+			<td>&amp;#x2002;</td>
+		</tr>
+		<tr>
+			<td>non-printing</td>
+			<td>Em space</td>
+			<td>&amp;emsp;</td>
+			<td>&amp;#8195;</td>
+			<td>&amp;#x2003;</td>
+		</tr>
+		<tr>
+			<td>non-printing</td>
+			<td>zero-width space</td>
+			<td>none</td>
+			<td>&amp;#8203;</td>
+			<td>&amp;#x200B;</td>
+		</tr>
+		<tr>
+			<td>non-printing</td>
+			<td>zero-width non-joiner</td>
+			<td>&amp;zwnj;</td>
+			<td>&amp;#8204;</td>
+			<td>&amp;#x200D;</td>
+		</tr>
+		<tr>
+			<td>non-printing</td>
+			<td>zero-width joiner</td>
+			<td>&amp;zwj;</td>
+			<td>&amp;#8205;</td>
+			<td>&amp;#x200D;</td>
+		</tr>
+</table>
+<br>
+
+<h3>Input limitations</h3>
+
+<table>
+	<caption>Special characters and their character references</caption>
+	<tr>
+		<th>Character</th>
+		<th>Description</th>
+		<th>Entity name</th>
+		<th>Decimal no.</th>
+		<th>Hexadecimal no.</th>
+	</tr>
+	<tr>
+		<td>&lsquo;</td>
+		<td>left curly single quote</td>
+		<td>&amp;lsquo;</td>
+		<td>&amp;#8216;</td>
+		<td>&amp;#x2018;</td>
+	</tr>
+	<tr>
+		<td>&rsquo;</td>
+		<td>right curly single quote</td>
+		<td>&amp;rsquo;</td>
+		<td>&amp;#8217;</td>
+		<td>&amp;#x2019;</td>
+	</tr>
+	<tr>
+		<td>&ldquo;</td>
+		<td>left curly double quote</td>
+		<td>&amp;ldquo</td>
+		<td>&amp;#8220;</td>
+		<td>&amp;#x201C;</td>
+	</tr>
+	<tr>
+		<td>&rdquo;</td>
+		<td>right curly double quote</td>
+		<td>&amp;rdquo;</td>
+		<td>&amp;#8221;</td>
+		<td>&amp;#x201D</td>
+	</tr>
+	<tr>
+		<td>&hellip;</td>
+		<td>horizontal ellipsis</td>
+		<td>&amp;hellip;</td>
+		<td>&amp;#8221;</td>
+		<td>&amp;#x201D;</td>
+	</tr>
+	<tr>
+		<td>&copy;</td>
+		<td>copyright</td>
+		<td>&amp;copy;</td>
+		<td>&amp;#169;</td>
+		<td>&amp;#xA9;</td>
+	</tr>
+	<tr>
+		<td>&reg;</td>
+		<td>registered trademark</td>
+		<td>&amp;reg;</td>
+		<td>&amp;#174;</td>
+		<td>&amp;#xAE;</td>
+	</tr>
+	<tr>
+		<td>&trade;</td>
+		<td>trademark</td>
+		<td>&amp;trade;</td>
+		<td>&amp;#8482;</td>
+		<td>&amp;#x2026;</td>
+	</tr>
+	<tr>
+		<td>&pound;</td>
+		<td>pound</td>
+		<td>&amp;pound;</td>
+		<td>&amp;#163;</td>
+		<td>&amp;#xA3;</td>
+	</tr>
+	<tr>
+		<td>&yen;</td>
+		<td>yen</td>
+		<td>&amp;yen;</td>
+		<td>&amp;#165;</td>
+		<td>&amp;#xA5;</td>
+	</tr>
+	<tr>
+		<td>&euro;</td>
+		<td>euro</td>
+		<td>&amp;euro;</td>
+		<td>&amp;#8364;</td>
+		<td>&amp;#x20AC;</td>
+	</tr>
+	<tr>
+		<td>&ndash;</td>
+		<td>en dash</td>
+		<td>&amp;ndash;</td>
+		<td>&amp;#8211;</td>
+		<td>&amp;x2013;</td>
+	</tr>
+	<tr>
+		<td>&mdash;</td>
+		<td>em dash</td>
+		<td>&amp;mdash;</td>
+		<td>&amp;#8212;</td>
+		<td>&amp;x2014;</td>
+	</tr>
+</table>
+
+<h3>Text elements</h3>
+
+<table>
+	<caption>Page sections</caption>
+	<tr>
+		<td>address</td>
+		<td>address</td>
+	</tr>
+	<tr>
+		<td>article</td>
+		<td>article</td>
+	</tr>
+	<tr>
+		<td>aside</td>
+		<td>aside</td>
+	</tr>
+	<tr>
+		<td>footer</td>
+		<td>footer</td>
+	</tr>
+	<tr>
+		<td>header</td>
+		<td>introductory content</td>
+	</tr>
+	<tr>
+		<td>nav</td>
+		<td>primary navigation</td>
+	</tr>
+	<tr>
+		<td>section</td>
+		<td>section</td>
+	</tr>
+</table>
+<br>
+<br>
+
+<table>
+	<caption>Heading content</caption>
+	<tr>
+		<td>h1 ... h6</td>
+		<td>headings</td>
+	</tr>
+</table>
+<br>
+<br>
+
+<table>
+	<caption>Grouping content elements and attributes</caption>
+	<tr>
+		<td>blockquote<br><i>cite</i></td>
+		<td>blockquote<br><i>cite</i></td>
+	</tr>
+	<tr>
+		<td>div</td>
+		<td>generic division</td>
+	</tr>
+	<tr>
+		<td>figure</td>
+		<td>ralated image or resource</td>
+	</tr>
+	<tr>
+		<td>figcaption</td>
+		<td>text description of a figure</td>
+	</tr>
+	<tr>
+		<td>hr</td>
+		<td>horizontal rule</td>
+	</tr>
+	<tr>
+		<td>main</td>
+		<td>main</td>
+	</tr>
+	<tr>
+		<td>p</td>
+		<td>paragraph</td>
+	</tr>
+	<tr>
+		<td>pre</td>
+		<td>preformatted text</td>
+	</tr>
+</table>
+<br>
+<br>
+
+<table>
+	<caption>List elements and attributes</caption>
+	<tr>
+		<td>dd</td>
+		<td>description definition</td>
+	</tr>
+	<tr>
+		<td>dl</td>
+		<td>description list</td>
+	</tr>
+	<tr>
+		<td>dt</td>
+		<td>description term</td>
+	</tr>
+	<tr>
+		<td>li<br><i>value</i></td>
+		<td>list item<br><i>provides a number for an li in an ol</i></td>
+	</tr>
+	<tr>
+		<td>ol<br><i>reversed<br>start</i></td>
+		<td>ordered list<br><i>reverse order<br>provides the starting number for the list</i></td>
+	</tr>
+	<tr>
+		<td>ul</td>
+		<td>unordered list</td>
+	</tr>
+</table>
+<br>
+<br>
+
+<table>
+	<caption>Breaks</caption>
+	<tr>
+		<td>br</td>
+		<td>line break</td>
+	</tr>
+	<tr>
+		<td>wbr</td>
+		<td>word break</td>
+	</tr>
+</table>
+<br>
+<br>
+
+<table>
+	<caption>Phrasing elements and attributes</caption>
+	<tr>
+		<td>abbr</td>
+		<td>abbreviation</td>
+	</tr>
+	<tr>
+		<td>b</td>
+		<td>bold</td>
+	</tr>
+	<tr>
+		<td>bdi</td>
+		<td>bidirectional isolation</td>
+	</tr>
+	<tr>
+		<td>bdo</td>
+		<td>bidirectional override</td>
+	</tr>
+	<tr>
+		<td>cite</td>
+		<td>citation</td>
+	</tr>
+	<tr>
+		<td>code</td>
+		<td>code</td>
+	</tr>
+	<tr>
+		<td>data</td>
+		<td>machine readable data</td>
+	</tr>
+	<tr>
+		<td>del<br><i>cite<br>datetime</i><br></td>
+		<td>deleted text<br><i>the URL of cited content<br>specifies the date and time of a change</i></td>
+	</tr>
+	<tr>
+		<td>dfn</td>
+		<td>define</td>
+	</tr>
+	<tr>
+		<td>em</td>
+		<td>emphasis</td>
+	</tr>
+	<tr>
+		<td>i</td>
+		<td>italic</td>
+	</tr>
+	<tr>
+		<td>ins<br><i>cite<br>datetime</i></td>
+		<td>inserted text<br><i>cite<br>datetime</i></td>
+	</tr>
+	<tr>
+		<td>kbd</td>
+		<td>keyboard input</td>
+	</tr>
+	<tr>
+		<td>mark</td>
+		<td>higlight text</td>
+	</tr>
+	<tr>
+		<td>q<br><i>cite</i></td>
+		<td>inline quotation<br><i>cite</i></td>
+	</tr>
+	<tr>
+		<td>ruby</td>
+		<td>section containing ruby text</td>
+	</tr>
+	<tr>
+		<td>rp</td>
+		<td>parentheses in ruby text</td>
+	</tr>
+	<tr>
+		<td>s</td>
+		<td>strike through</td>
+	</tr>
+	<tr>
+		<td>samp</td>
+		<td>sample output</td>
+	</tr>
+	<tr>
+		<td>small</td>
+		<td>small</td>
+	</tr>
+	<tr>
+		<td>span</td>
+		<td>generic phrase of text</td>
+	</tr>
+	<tr>
+		<td>strong</td>
+		<td>strong</td>
+	</tr>
+	<tr>
+		<td>sub</td>
+		<td>subscript</td>
+	</tr>
+	<tr>
+		<td>sup</td>
+		<td>superscript</td>
+	</tr>
+	<tr>
+		<td>time<br><i>datetime<br>pubdate</i></td>
+		<td>machine readable time data<br><i>datetime<br>publication date</i></td>
+	</tr>
+	<tr>
+		<td>u</td>
+		<td>underline</td>
+	</tr>
+</table>
+<br>
+<br>
+
+
+<br>
+
+<hr>
+<hr>
+
+<h2>Random practice</h2>
+<p><b>Example 1:</b></p>
+<article>
+<header>
+<h5>h5 here inside header, article</h5>
+<p>paragraph, <time datetime="2017-11-11">November 01,
+2010</time></p>
+</header>
+&lt;!-- article content here --&gt;
+<footer>
+<p><small>Here starts footer with small. copyright symbol after this &copy;
+2010 Borto Slovo.</small></p>
+<nav>
+	<ul>
+		<li><a href="">Previous</a></li>
+		<li><a href="">Next</a></li>
+	</ul>
+</nav>
+</footer>
+</article>
+<p>above this ended article, footer, nav</p>
+
+<p><b>Example 2:</b></p>
+<section>
+<h3>Section I</h3>
+<ul>
+	<li>ul 1</li>
+</ul>
+</section>
+
+<p><b>Example 3:</b></p>
+<section>
+<h3>Section II</h3>
+<p>paragraph</p>
+<ul>
+	<li>another ul xd</li>
+</ul>
+</section>
+
+<p><b>Example 4:</b></p>
+<article>
+<h3>article h2</h3>
+	<section>
+	<h3>section h3</h3>
+	<p>paragraph</p>
+	</section>
+	<section>
+	<h3>section h3</h3>
+	<p>paragraph</p>
+	</section>
+</article>
+
+<p><b>Example 5:</b></p>
+<nav>
+	<ul>
+		<li><a href="">nav ul li // nav </a></li>
+	</ul>
+</nav>
+
+
+<h4>&lt;dir&gt; example</h4>
+<p>This is how you write Shalom:
+<span dir="rtl">םולש</span></p>
+<p>rtl = right to left</p>
+
+<hr>
+
+	</body>
+</html>
+
