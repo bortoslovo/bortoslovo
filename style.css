@@ -15,14 +15,14 @@ h1, h2, h3 {
 	color: olive;
 }
 
-img[src="../images/borto-1.jpg"] {
-	height: 50px;
-	width: 500px;
+img[src="images/borto-1.jpg"] {
+	height: 100px;
+	width: 50px;
 }
 
 img {
-	height: 200px;
-	width: 50px;
+	height: 50px;
+	width: 500px;
 }
 
 #thirdid:hover {
@@ -48,6 +48,7 @@ h1 {
 	background-color: yellow;
 	font-size: 60px;
 	text-align: center;
+	margin: 0;
 }
 
 ul {
@@ -58,4 +59,33 @@ p, li {
 	font-size: 16px;
 	line-height: 4;
 	letter-spacing: 9px
+}
+
+#old-page {
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+	font-family: Serif;
+	background-color: palegreen;
+	border: 2px solid red;
+}
+
+body {
+	width: 600px;
+	margin: 0 auto;
+	background-color: thistle;
+	padding: 10px 15px 20px 25px;
+	border: 5px solid fuchsia;
+}
+
+h2 {
+	margin: 0;
+	padding: 20px 0;
+	color: darkgreen;
+	text-shadow: 3px 3px 1px lightblue;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
 }
