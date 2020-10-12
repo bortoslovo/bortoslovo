@@ -3,14 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>MDN tutorial</title>
-	 <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet"> 
 	<link href="style.css" rel="stylesheet"> 
   </head>
   <body>
 	<h1>MDN tutorial 1</h1>
 
+	<img src="images/debian.jpg" alt="debian logo">
+	<button>Change user</button>
+
+	<nav>
+		<h2>Introduction to HTML</h2>
+		<ul>
+			<li><a href="mdn/introduction-to-html/01-getting-started-with-html.html" title="random title">01 - Getting started with HTML</a></li>
+		</ul>
+	</nav>
 	<h2>Images</h2>
-    <img src="images/borto-1.jpg" alt="My test image" height="100" width="50">
+   <img src="images/borto-1.jpg" alt="My test image" height="100" width="50">
+	<br>
 	<img src="images/placeholder-1.png" alt="placeholder" height="50" width="100">
 
 	<h2>Marking up text</h2>
@@ -24,13 +35,13 @@
 	<p>At Mozilla, we’re a global community of</p>
 	<ul class="secondclass"> 
 	  <li>technologists</li>
-	  <li class="firstclass">thinkers</li>
+	  <li >thinkers</li>
 	  <li>builders</li>
 	</ul>
 	<p id="firstid">working together ... </p>
 	<br>
 	<p>At Mozilla, we’re a global community of</p>
-	<ol> 
+	<ol class="firstclass"> 
 	  <li>technologists</li>
 	  <li>thinkers</li>
 	  <li>builders</li>
@@ -38,6 +49,12 @@
 	<p>working together ... </p>
 
 	<h2>Links</h2>
-	<p id="old-page"><a href="old-index.html">To the old main page</a></p>
+	<p id="old-page"><a href="old-index.html" title="My first steps :3">To the old main page</a></p>
+
+	<p><a target="_blank" href="old-index.html" title="My first steps :3">Open the old main page in a new different tab :P</a></p>
+
+	<h2>JavaScript</h2>
+	<img src="images/debian.jpg" alt="debian logo">
+	<script src="scripts/main.js"></script>
  </body>
 </html>

@@ -1,9 +1,9 @@
 p {
-  color: red;
+  color: darkred;
 	font-weight: bold;
 }
 
-h1, h2, h3 {
+h1, h2 {
 	border: 2px solid grey;
 }
 
@@ -12,7 +12,11 @@ h1, h2, h3 {
 }
 
 .secondclass {
-	color: olive;
+	color: navy;
+}
+
+.firstclass {
+	color: darkslateblue;
 }
 
 img[src="images/borto-1.jpg"] {
@@ -21,8 +25,8 @@ img[src="images/borto-1.jpg"] {
 }
 
 img {
-	height: 50px;
-	width: 500px;
+	height: 100px;
+	width: 100px;
 }
 
 #thirdid:hover {
@@ -32,9 +36,10 @@ img {
 
 html {
   font-size: 15px; /* px means "pixels": the base font size is now 15 pixels high  */
-  font-family: "Sansita Swashed", cursive; /* this should be the rest of the output you got from Google fonts */
+  font-family: "Source Serif Pro", serif; /* this should be the rest of the output you got from Google fonts */
 	background-color: wheat;
 }
+/* font-family: "Sansita Swashed", cursive; this should be the rest of the output you got from Google fonts */
 
 /* comment */
 
@@ -57,7 +62,7 @@ ul {
 p, li {
 	font-size: 16px;
 	line-height: 4;
-	letter-spacing: 9px
+	letter-spacing: 1px
 }
 
 #old-page {
