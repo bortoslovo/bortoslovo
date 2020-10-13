@@ -1,0 +1,50 @@
+html {
+  background-color: wheat;
+}
+
+body {
+	width: 900px;
+	margin: 0px auto;
+	background-color: lightgreen;
+}
+
+h1 {
+  text-align: center;
+  background-color: thistle;
+  font-size: 36px;
+  font-family: serif;
+  font-weight: bold;
+  text-shadow: 2px 2px 1px yellow;
+}
+
+ol {
+  background: lightsalmon;
+  padding: 10px;
+  border: 1px solid black;
+  letter-spacing: 0px;
+  line-height: 1px;
+}
+
+li {
+  margin-left: 20px;
+}
+
+#idp1 {
+  font-family: URW Chancery L, cursive;
+  font-size: 30px;
+}
+
+#idp3 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.classp2 {
+  padding: 20px 30px;
+}
+
+p {
+  margin: 50px 100px;
+  border: 20px double steelblue;
+  padding: 40px 90px;
+}

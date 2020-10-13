@@ -1,0 +1,14 @@
+html {
+  background-color: lightgreen;
+  font-size: 20px;
+}
+
+ul {
+  background: lightsalmon;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+li {
+  margin-left: 20px;
+}
