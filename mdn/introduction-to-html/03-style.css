@@ -4,8 +4,9 @@ html {
 
 body {
 	width: 900px;
-	margin: 0px auto;
+	margin: 20px auto;
 	background-color: lightgreen;
+	padding: 0 0 1px 0;
 }
 
 h1 {
@@ -36,7 +37,7 @@ li {
 
 #idp3 {
   font-weight: bold;
-  text-align: center;
+  text-align: right;
 }
 
 .classp2 {
@@ -44,7 +45,18 @@ li {
 }
 
 p {
-  margin: 50px 100px;
-  border: 20px double steelblue;
-  padding: 40px 90px;
+  margin: 10px 100px;
+  border: 10px double steelblue;
+  padding: 20px;
+  text-align: center;
 }
+
+address {
+  text-align: center;
+  padding: 0 0 15px 0;
+}
+
+nav {
+  padding: 15px;
+}
+
