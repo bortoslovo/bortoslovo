@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Number guessing game</title>
+		<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+		<meta name="author" content="Borto Slovo">
+		<meta name="description" content="MDN JavaScript practice">
+		<meta name="viewport" content="width=device-width">
+
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+				background-color: black;
+				color: white;
+      }
+
+      .lastResult {
+        color: pink;
+        padding: 3px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 style="color: springgreen">Adiviná el número</h1>
+
+		<p>La compu eligió un número del 1 al 20.<br>
+		Adiviná cual es.<br>
+		Tenés 10 oportunidades.
+
+		<br>
+		<br>
+		<br>
+
+    <div class="form">
+      <label for="guessField">Escribí el número: </label>
+      <input type="text" id="guessField" class="guessField">
+      <input type="submit" value="Probar" class="guessSubmit">
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult" style="font-size: 20px"></p>
+      <p class="lowOrHi"></p>
+    </div>
+
+    <script>
+			let randomNumber = Math.floor(Math.random() * 20) + 1;
+
+			const guesses = document.querySelector('.guesses');
+			const lastResult = document.querySelector('.lastResult');
+			const lowOrHi = document.querySelector('.lowOrHi');
+
+			const guessSubmit = document.querySelector('.guessSubmit');
+			const guessField = document.querySelector('.guessField');
+
+			let guessCount = 1;
+			let resetButton;
+
+			function checkGuess() {
+				let userGuess = Number(guessField.value);
+				if (guessCount === 1) {
+					guesses.textContent = 'Previous guesses: ';
+				}
+				guesses.textContent += userGuess + ' ';
+			 
+				if (userGuess === randomNumber) {
+					lastResult.textContent = '¡Tramposo! ¡Hicistes trampa! ¡Te vas a ir al infierno!';
+					lastResult.style.backgroundColor = 'darkred';
+					lowOrHi.textContent = '';
+					setGameOver();
+				} else if (guessCount === 10) {
+					lastResult.textContent = '¡¡¡JAJAJA PERDISTES LALALA!!!';
+					setGameOver();
+				} else {
+					lastResult.textContent = 'NOPE ... Intentá de nuevo ...';
+					lastResult.style.backgroundColor = 'teal';
+					if(userGuess < randomNumber) {
+						lowOrHi.textContent = 'Es un número más grande ...';
+					} else if(userGuess > randomNumber) {
+						lowOrHi.textContent = 'Es un número más chico ...';
+					}
+				}
+			 
+				guessCount++;
+				guessField.value = '';
+				guessField.focus();
+			}
+
+			guessSubmit.addEventListener('click', checkGuess);
+
+			function setGameOver() {
+				guessField.disabled = true;
+				guessSubmit.disabled = true;
+				resetButton = document.createElement('button');
+				resetButton.textContent = '¡Ay pero que buen juego! ¡Quiero jugar de nuevo!';
+				document.body.append(resetButton);
+				resetButton.addEventListener('click', resetGame);
+			}
+
+			function resetGame() {
+				guessCount = 1;
+
+				const resetParas = document.querySelectorAll('.resultParas p');
+				for (let i = 0 ; i < resetParas.length ; i++) {
+					resetParas[i].textContent = '';
+				}
+
+				resetButton.parentNode.removeChild(resetButton);
+
+				guessField.disabled = false;
+				guessSubmit.disabled = false;
+				guessField.value = '';
+				guessField.focus();
+
+				lastResult.style.backgroundColor = 'lightblue';
+
+				randomNumber = Math.floor(Math.random() * 100) + 1;
+			}
+
+    </script>
+  </body>
+</html>
