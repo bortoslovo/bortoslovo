@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Number guessing game</title>
-		<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <title>Super Juego</title>
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 		<meta name="author" content="Borto Slovo">
 		<meta name="description" content="MDN JavaScript practice">
 		<meta name="viewport" content="width=device-width">
@@ -69,17 +69,18 @@
 			function checkGuess() {
 				let userGuess = Number(guessField.value);
 				if (guessCount === 1) {
-					guesses.textContent = 'Previous guesses: ';
+					guesses.textContent = 'Ya intentastes estos números: ';
 				}
 				guesses.textContent += userGuess + ' ';
 			 
 				if (userGuess === randomNumber) {
-					lastResult.textContent = '¡Tramposo! ¡Hicistes trampa! ¡Te vas a ir al infierno!';
+					lastResult.textContent = '¡Hicistes trampa! ¡Te vas a ir al infierno!';
 					lastResult.style.backgroundColor = 'darkred';
 					lowOrHi.textContent = '';
 					setGameOver();
 				} else if (guessCount === 10) {
 					lastResult.textContent = '¡¡¡JAJAJA PERDISTES LALALA!!!';
+					lastResult.style.backgroundColor = 'darkslateblue';
 					setGameOver();
 				} else {
 					lastResult.textContent = 'NOPE ... Intentá de nuevo ...';
