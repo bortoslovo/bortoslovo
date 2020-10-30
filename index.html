@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>MDN tutorial</title>
-	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet"> 
+
+<!--	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet"> -->
+
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
 
 	<link href="style.css" rel="stylesheet"> 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -12,33 +15,47 @@
 
 	<meta name="viewport" content="width=device-width">
 
-	<!-- Facebook meta -->
+    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+
+	<!-- Facebook meta
 	<meta property="og:image" content="https://bortoslovo.github.io/bortoslovo/images/borto-2.jpg">
 	<meta property="og:description" content="Pero mirá como webeo (es decir, mirá como hago webs)">
 	<meta property="og:title" content="Borto Slovo">
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="Borto Slovo">
+	-->
 
-	<!-- Twitter meta -->
+	<!-- Twitter meta
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@aerlaendr">
 	<meta name="twitter:creator" content="@aerlaendr">
 	<meta name="twitter:image" content="https://bortoslovo.github.io/bortoslovo/images/borto-2.jpg">
+	-->
 
   </head>
-  <body>
-	<h1 id="idh1">MDN tutorial 1</h1>
-	<p>To document fragment at the end of the page ...<a href="#idjavascript">go!&gt;&lt;</a></p>
 
-	<img src="images/debian.jpg" alt="debian logo">
-	<button>Change user</button>
+  <body>
+
+	<h1 id="idh1">MDN tutorial 1</h1>
+
+	<p>To document fragment at the end of the page ... <a href="#idjavascript">go! &gt;&lt;</a></p>
+
+	<img src="images/drums-100w.png" alt="drums set">
+	<button id="button">Change user</button>
 
 	<nav>
-		<h2>Nuevo: Super Juego!!!</h2>
+
+		<h2 id="h2-1">Nuevo: Super Juego!!!</h2>
+
 		<ul>
-			<li style="font-size: 25px; background-color: orange; font-weight: bold"><a href="mdn/t02-number-guessing-game-start.html" title="Se van a caer de culo! :o">Super Juego Super Divertido Super Nuevo</a></li>
+			<li><a href="mdn/t02-number-guessing-game-start.html" title="Se van a caer de culo! :o">Super Juego Super Divertido Super Nuevo</a></li>
 		</ul>	
+
 		<h2>Introduction to HTML</h2>
+
 		<ul>
 			<li><a href="mdn/introduction-to-html/01-getting-started-with-html.html" title="random title">01 - Getting started with HTML</a></li>
 			<li><a href="mdn/introduction-to-html/02-what-is-in-the-head.html" title="Second page of HTML tutorial">02 - What's in the head?</a></li>
@@ -46,13 +63,18 @@
 			<li><a href="mdn/introduction-to-html/t02-text-start.html" title="Example">Exercise/example: text start</a></li>
 			<li><a href="mdn/introduction-to-html/03-html-text-fundamentals.html" title="Example">03 - HTML text fundamentals</a></li>
 			<li><a href="mdn/introduction-to-html/t03-index.html" title="Exercise">Index, pictures, projects, social</a></li>
-
 		</ul>
+
 	</nav>
+
 	<h2>Images</h2>
-   <img src="images/borto-1.jpg" alt="My test image" height="100" width="50">
-	<br>
-	<img src="images/placeholder-1.png" alt="placeholder" height="50" width="100">
+   <img	class="img-2" src="images/borto-2.jpg" 
+				alt="My test image" 
+				height="100" 
+				width="50">
+	<img	class="img-2" src="images/vitamins-100w.png" 
+				alt="placeholder" 
+				height="50" width="100">
 
 	<h2>Marking up text</h2>
 
@@ -84,7 +106,7 @@
 	<p><a target="_blank" href="old-index.html" title="My first steps :3">Open the old main page in a new different tab :P</a></p>
 
 	<h2 id="idjavascript">JavaScript</h2>
-	<img src="images/debian.jpg" alt="debian logo">
+	<img src="images/drums-100w.png" alt="drums set">
 
 	<h2>Downloading test</h2>
 	<p><a href="placeholder1.png" download="placeholder1.png">Download small placeholder image (2KB)</a></p>

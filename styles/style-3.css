@@ -1,0 +1,21 @@
+body {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 600px;
+}
+
+h1 {
+  font-size: 2rem;
+  border-bottom: 0.1rem solid white;
+}
+
+ul {
+  background-color: navy;
+  border: 0.1rem solid green;
+}
+
+:any-link {
+	color: aqua;
+}
