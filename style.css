@@ -40,29 +40,23 @@ p, li {
 
 p {
   color: #FFB999;
-	font-weight: bold;
 }
 
 h2 {
 	padding: 5px 15px;
 	color: #99FFB9;
+	font-weight: bold;
+}
+
+img[src="images/pen-75.jpg"] {
+	height: 50px;
+	width: 150px;
 }
 
 img {
 	height: 100px;
 	width: 100px;
-	display: block;
-	margin: 0 auto;
-}
-
-img[src="images/borto-1.jpg"] {
-	height: 100px;
-	width: 50px;
-}
-
-.img-2 {
-	display: inline;
-	padding: 0 2rem;	
+	padding: 0 1rem;
 }
 
 #h2-1 {
