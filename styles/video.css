@@ -1,0 +1,13 @@
+html {
+	background: black;
+	color: white;
+}
+
+body {
+	width: 700px;
+	margin: 0 auto;
+}
+
+:any-link {
+	color: lightblue;
+}

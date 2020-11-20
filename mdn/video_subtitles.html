@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Video and subtitles</title>
+	<link rel="stylesheet" href="../styles/video.css">
+</head>
+<body>
+	<h1>Video and subtitles</h1>
+
+	<figure>
+		<video controls
+					 width="640" height="360"
+					 poster="../images/borto-2.jpg">
+			<source src="../videos/free-vid.mp4" type="video/mp4">
+			<track label="eng" kind="subtitles" src="../subtitles/free-vid-en.vtt" srclang="en">
+			<track label="de" kind="subtitles" src="../subtitles/free-vid-de.vtt" srclang="de">
+		</video>
+	<figcaption>Video with vtt subtitles</figcaption>
+	</figure>
+	<footer>
+			Video by: <cite><a href="https://www.pexels.com/video/aerial-footage-of-a-colorful-lights-in-the-street-at-night-3108018/">Alexander Bobrov</a></cite><br>
+			Audio by: <cite><a href="https://freesound.org/people/jordanielmills/">jordanielmills</a></cite><br>
+	</footer>
+
+</body>
+</html>
