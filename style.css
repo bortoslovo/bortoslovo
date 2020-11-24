@@ -9,8 +9,8 @@ html {
 /* comment */
 
 body {
-	width: 40rem;
-	margin: 20px auto 20px;
+	width: 700px;
+	margin: 20px auto;
 	background-color: black;
 	padding: 10px 15px 20px 15px;
 	border: 0.1rem solid #00564F;
@@ -53,10 +53,16 @@ img[src="images/pen-75.jpg"] {
 	width: 150px;
 }
 
-img {
+.img-2 {
 	height: 100px;
 	width: 100px;
 	padding: 0 1rem;
+}
+
+.images-2 {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 #h2-1 {
@@ -101,4 +107,8 @@ img {
 
 :any-link {
 	color: #7E7EFF;
+}
+
+.hitmap {
+	margin: 0 auto;
 }

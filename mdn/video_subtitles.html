@@ -9,7 +9,7 @@
 	<h1>Video and subtitles</h1>
 	<figure>
 		<video controls
-					 width="640" height="360"
+					 width="640" height="320"
 					 poster="../images/borto-2.jpg">
 			<source src="../videos/free-vid.mp4" type="video/mp4">
 			<track label="eng" kind="subtitles" src="../subtitles/free-vid-en.vtt" srclang="en">
@@ -18,18 +18,29 @@
 	<figcaption>Video with vtt subtitles</figcaption>
 	</figure>
 
+	<br>
+
 	<h2>Fallback message</h2>
 	<figure>
 		<video controls
-					 width="640" height="360"
+					 width="640" height="320"
 					 poster="../images/borto-2.jpg">
 			<source src="../videos/free-vid.aaa" type="video/aaa">
 			<track label="eng" kind="subtitles" src="../subtitles/free-vid-en.vtt" srclang="en">
 			<track label="de" kind="subtitles" src="../subtitles/free-vid-de.vtt" srclang="de">
       <p>Your browser doesn't support this video format. Here is a <a href="../videos/free-vid.aaa">link to the video.</a></p>
 		</video>
-	<figcaption>Video with vtt subtitles</figcaption>
+	<figcaption>Video with fallback message.<br>
+							Fallback message doesn't work in:<br>
+							- Chromium 87 ubuntu<br>
+							- Firefox 83 ubuntu<br>
+							- Chrome 86 android<br> 
+							- Duckduck Go 5.69 android</figcaption>
 	</figure>
+	<br>
+	<p>Searching on the web, I found that it seems that there is not support in any browser for fallback messages. You need to use javascript or some other tool to generate such message.</p>
+
+	<br>
 
 	<footer>
 			Video by: <cite><a href="https://www.pexels.com/video/aerial-footage-of-a-colorful-lights-in-the-street-at-night-3108018/">Alexander Bobrov</a></cite><br>

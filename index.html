@@ -41,7 +41,7 @@
 
 	<h1 id="idh1">MDN tutorial 1</h1>
 
-	<img src="images/drums-100w.png" alt="drum set" style="float: right">
+	<img src="images/borto-2.jpg" alt="drum set" style="float: right" width="100">
 	<p>To the end of the page ... <a href="#idjavascript">go! &gt;&lt;</a></p>
 
 	<button id="button">Change user</button>
@@ -55,7 +55,7 @@
 		</ul>	
 
 		<h2>Introduction to HTML</h2>
-   <img	class="img-2" src="images/borto-2.jpg" alt="My test image"
+   <img	class="img-2" src="images/drums-100w.png" alt="My test image"
 				height="100" width="50" style="float: right; padding: 0 0"></h2>
 		<ul>
 			<li><a href="mdn/introduction-to-html/01-getting-started-with-html.html" title="random title">01 - Getting started with HTML</a></li>
@@ -69,17 +69,26 @@
 
 	</nav>
 
-	<h2>Images</h2>
-	<img	class="img-2" src="images/pen-75.jpg" 
-				alt="pen and notebook" 
-				height="50" width="100">
+	<h2>Images 1</h2>
+	<img	class="img-2" src="images/vitamins-100w.png" 
+				alt="vitamins" style="display: block; margin: 0 auto;">
+
+	<h2>Images 2</h2>
+	<div class="images-2">
+	<img	class="img-2" src="images/vitamins-100w.png" 
+				alt="vitamins">
+
+   <img	class="img-2" src="images/borto-2.jpg" alt="My test image">
+
+	<img src="images/drums-100w.png" alt="drum set">
+	</div>
 
 	<h2>Marking up text</h2>
 
 	<h3 id="thirdid">Headings</h3>
 	<img	class="img-2" src="images/vitamins-100w.png" 
 				alt="vitamins" 
-				height="50" width="100" style="float: left;">
+				style="float: left;">
 	<p>Pera pera, pera pera, pera pera pera pera. Pera pera pera pera, pera pera pera pera: pera pera, pera pera pera pera. Pera pera, pera pera! Pera pera pera pera?</p>
 	<br>
 
@@ -116,7 +125,27 @@
 	<p><a href="style.css" download="style.css">Download first style.css (1KB)</a></p>
 
 	<p id="idlastbacktotop"><a href="#idh1">Back to the top</a></p>
-	
+
+	<hr>
+
+	<h2>Hitmap on images</h2>
+	<img
+		src="images/squares2-640w.png"
+		alt=""
+		usemap="#squares"
+		style="display: block; margin: 0 auto;"
+		class="hitmap">
+
+	<map name="squares">
+		<area shape="rect" coords="0, 0, 182, 182"
+		href="mdn/mdn-tutorial.html" alt="mdn tutorial page" title="mdn tutorial page">
+		<area shape="rect" coords="230, 0, 410, 182"
+		href="old-index.html" alt="old index" title="old index">
+		<area shape="rect" coords="459, 459, 640, 640"
+		href="images/vitamins-100w.png" alt="vitamins image" title="vitamins image">
+	</map>
+
 	<script src="scripts/main.js"></script>
+
  </body>
 </html>
